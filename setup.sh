@@ -1,10 +1,17 @@
 #!/bin/bash
 
+GSDK_DOWNLOAD_LINK="https://github.com/SiliconLabs/gecko_sdk/releases/download/v4.3.2/gecko-sdk.zip"
+GSDK_DOWNLOAD_DIR="$(pwd)"
+GSDK_DOWNLOAD_ZIP_FILEPATH="$GSDK_DOWNLOAD_DIR/gsdk_download.zip"
+GSDK_UNZIPPED_DIR_PATH="$GSDK_DOWNLOAD_DIR/gsdk_unzipped"
+
 CPCD_DOWNLOAD_LINK="https://github.com/SiliconLabs/cpc-daemon/archive/refs/tags/v4.3.2.zip"
 CPCD_DOWNLOAD_DIR="$(pwd)/cpcd"
 CPCD_BUILD_DIR="$CPCD_DOWNLOAD_DIR/build"
 CPCD_DOWNLOAD_FILE_NAME="$CPCD_DOWNLOAD_DIR/cpcd_download.zip"
 CPCD_UNZIPPED_DIR_PATH="$CPCD_DOWNLOAD_DIR/cpc-daemon-4.3.2"
+
+
 
 
 while [[ $# -gt 0 ]]; do
@@ -40,6 +47,21 @@ while [[ $# -gt 0 ]]; do
             cmake -B "$CPCD_BUILD_DIR" "$CPCD_UNZIPPED_DIR_PATH"
             sudo make -C "$CPCD_BUILD_DIR" install
 
+            exit
+            ;;
+        -gsdk-du|--gsdk-download-unzip)
+            echo "GSDK download and unzip to directory: $GSDK_DOWNLOAD_DIR"
+
+            # download GSDK and unzip
+            wget -O "$GSDK_DOWNLOAD_ZIP_FILEPATH" "$GSDK_DOWNLOAD_LINK"
+            unzip "$GSDK_DOWNLOAD_ZIP_FILEPATH" -d "$GSDK_UNZIPPED_DIR_PATH"
+
+            exit
+            ;;
+        -socat-o|--socat-open)
+            echo "Socat command executing: socat pty,link=/dev/ttyZigbeeNCP pty,link=/tmp/ttyZigbeeNCP"
+            sudo socat pty,link=/dev/ttyZigbeeNCP pty,link=/tmp/ttyZigbeeNCP
+            echo "Socat exiting..."
             exit
             ;;
         *)
