@@ -7,7 +7,6 @@ CPCD_DOWNLOAD_FILE_NAME="$CPCD_DOWNLOAD_DIR/cpcd_download.zip"
 CPCD_UNZIPPED_DIR_PATH="$CPCD_DOWNLOAD_DIR/cpc-daemon-4.3.2"
 
 
-
 while [[ $# -gt 0 ]]; do
     case $1 in
         -h|--help)
@@ -15,6 +14,8 @@ while [[ $# -gt 0 ]]; do
             exit
             ;;
         -cpcd-di|--cpcd-download-install)
+        # Reference: Section 3.1 to 3.3 
+        # https://www.silabs.com/documents/public/application-notes/an1351-using-co-processor-communication_daemon.pdf
             echo "CPCd download starting to path: $CPCD_DOWNLOAD_DIR"
             if [ -d "$CPCD_DOWNLOAD_DIR" ]; then
                 echo "CPCd directory already exists."
@@ -35,12 +36,9 @@ while [[ $# -gt 0 ]]; do
             wget -O "$CPCD_DOWNLOAD_FILE_NAME" "$CPCD_DOWNLOAD_LINK"
             unzip "$CPCD_DOWNLOAD_FILE_NAME" -d "$CPCD_DOWNLOAD_DIR"
 
-            # cmake and make the cpcd project
+            # cmake and make the cpcd project and then finally install
             cmake -B "$CPCD_BUILD_DIR" "$CPCD_UNZIPPED_DIR_PATH"
-            make -C "$CPCD_BUILD_DIR"
-
-            
-
+            sudo make -C "$CPCD_BUILD_DIR" install
 
             exit
             ;;
@@ -50,4 +48,3 @@ while [[ $# -gt 0 ]]; do
             ;;
     esac
 done
-
