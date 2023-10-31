@@ -13,6 +13,8 @@ COMMANDER_CLI_APP_NAME="commander-cli"
 JLINK_32BIT_INSTALLER_NAME="JLink_Linux_V792n_arm.deb"
 JLINK_32BIT_INSTALLER_FILE="$CURRENT_DIR/src/$JLINK_32BIT_INSTALLER_NAME"
 
+NCP_FIRMWARE_FILE="$CURRENT_DIR/src/4180B_FW/4180B_mg21_432_ncp-uart-hw_RSSI.hex"
+RCP_FIRMWARE_FILE="$CURRENT_DIR/src/4180B_FW/4180B_mg21_432_rcp-uart-802154_RSSI.hex"
 
 GSDK_DOWNLOAD_LINK="https://github.com/SiliconLabs/gecko_sdk/releases/download/v4.3.2/gecko-sdk.zip"
 GSDK_DOWNLOAD_DIR=$CURRENT_DIR
@@ -42,8 +44,6 @@ COMMANDER_ZIP_FILE="$COMMANDER_DOWNLOAD_DIR/$COMMANDER_ZIP_NAME"
 COMMANDER_TAR_FILE="$COMMANDER_DOWNLOAD_DIR/$(basename $COMMANDER_ZIP_NAME .zip)/$COMMANDER_TAR_NAME"
 COMMANDER_CLI_DIR="$COMMANDER_DOWNLOAD_DIR/$COMMANDER_CLI_APP_NAME"
 COMMANDER_CLI_APP="$COMMANDER_CLI_DIR/$COMMANDER_CLI_APP_NAME"
-
-
 
 GSDK_ZIP_DOWNLOAD_FILE="$GSDK_DOWNLOAD_DIR/gsdk_download.zip"
 
@@ -284,6 +284,17 @@ while [[ $# -gt 0 ]]; do
             echo "Running NCP Z3Gateway application: $Z3GATEWAY_APP -n 0 -p /dev/$2 2>&1 | tee $Z3GATEWAY_APP_NCP_LOG_FILE"
             sudo "$Z3GATEWAY_APP" -n 0 -p "/dev/$2" 2>&1 | tee "$Z3GATEWAY_APP_NCP_LOG_FILE"
             
+            exit
+            ;;
+
+        -flash-ncp|--flash-ncp-firmware)
+            echo "Flashing NCP firmware to DUT board"
+            "$COMMANDER_CLI_APP" flash "$NCP_FIRMWARE_FILE"
+            exit
+            ;;
+        -flash-rcp|--flash-rcp-firmware)
+            echo "Flashing RCP firmware to DUT board"
+            "$COMMANDER_CLI_APP" flash "$RCP_FIRMWARE_FILE"
             exit
             ;;
         *)
