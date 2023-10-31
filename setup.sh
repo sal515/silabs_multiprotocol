@@ -17,9 +17,9 @@ ZIGBEED_PROJECT_NAME="lin32_432_zigbeed_RSSI"
 ZIGBEED_PROJECT_DIR="$CURRENT_DIR/src/$ZIGBEED_PROJECT_NAME"
 ZIGBEED_CONFIG_IN_GSDK_FILE="app/host/multiprotocol/zigbeed/multiprotocol-container/_artifacts/etc/zigbeed.conf"
 
-Z3GATEWAY_DEFAULT_LOG_NAME="Z3Gateway.txt" # Located in Run directory
-Z3GATEWAY_PROJECT_DIR="$CURRENT_DIR/src/$Z3GATEWAY_PROJECT_NAME"
 Z3GATEWAY_PROJECT_NAME="lin32_432_Z3Gateway_RSSI"
+Z3GATEWAY_PROJECT_DIR="$CURRENT_DIR/src/$Z3GATEWAY_PROJECT_NAME"
+Z3GATEWAY_DEFAULT_LOG_NAME="Z3Gateway.txt" # Located in Run directory
 
 ZIGBEED_APP_FILE_RELPATH_FROM_BUILD="debug/$ZIGBEED_PROJECT_NAME"
 Z3GATEWAY_APP_FILE_RELPATH_FROM_BUILD="debug/$Z3GATEWAY_PROJECT_NAME"
@@ -40,6 +40,7 @@ ZIGBEED_BUILD_DIR="$ZIGBEED_PROJECT_DIR/build"
 ZIGBEED_APP="$ZIGBEED_BUILD_DIR/$ZIGBEED_APP_FILE_RELPATH_FROM_BUILD"
 
 Z3GATEWAY_MAKEFILE="$Z3GATEWAY_PROJECT_DIR/$Z3GATEWAY_PROJECT_NAME.Makefile"
+
 Z3GATEWAY_BUILD_DIR="$Z3GATEWAY_PROJECT_DIR/build"
 Z3GATEWAY_RUN_DIR="$Z3GATEWAY_PROJECT_DIR/run"
 
@@ -58,6 +59,18 @@ while [[ $# -gt 0 ]]; do
             exit
             ;;
         -gsdk-du|--gsdk-download-unzip)
+            if [ -d "$GSDK_UNZIPPED_DIR" ]; then
+                echo "GSDK unzipped directory already exists."
+                read -r -p "Do you want to delete it and proceed? (y/n): " answer
+                if [ "$answer" = "y" ]; then
+                    # Remove the existing directory and its contents
+                    rm -r "$GSDK_UNZIPPED_DIR"
+                else
+                    echo "GSDK download and installation cancelled."
+                    exit 1
+                fi
+            fi
+
             echo "GSDK downloading to directory: $GSDK_DOWNLOAD_DIR"
             wget -O "$GSDK_ZIP_DOWNLOAD_FILE" "$GSDK_DOWNLOAD_LINK"
             
@@ -66,7 +79,7 @@ while [[ $# -gt 0 ]]; do
 
             exit
             ;;
-        -cpcd-dui|--cpcd-download-install)
+        -cpcd-dui|--cpcd-download-unzip-install)
         # Reference: Section 3.1 to 3.3 
         # https://www.silabs.com/documents/public/application-notes/an1351-using-co-processor-communication_daemon.pdf
             if [ -d "$CPCD_DOWNLOAD_DIR" ]; then
@@ -146,7 +159,7 @@ while [[ $# -gt 0 ]]; do
 
             exit
             ;;
-        -zigbeed-o|--zigbeed-o)
+        -zigbeed-o|--zigbeed-open)
             echo "Running Zigbeed application: $ZIGBEED_APP -v"
             sudo "$ZIGBEED_APP" -v
             exit
