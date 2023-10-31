@@ -19,7 +19,8 @@ ZIGBEED_CONFIG_IN_GSDK_FILE="app/host/multiprotocol/zigbeed/multiprotocol-contai
 
 Z3GATEWAY_PROJECT_NAME="lin32_432_Z3Gateway_RSSI"
 Z3GATEWAY_PROJECT_DIR="$CURRENT_DIR/src/$Z3GATEWAY_PROJECT_NAME"
-Z3GATEWAY_DEFAULT_LOG_NAME="Z3Gateway.txt" # Located in Run directory
+Z3GATEWAY_DEFAULT_RCP_LOG_NAME="Z3Gateway_RCP_Log.txt" # Located in Run directory
+Z3GATEWAY_DEFAULT_NCP_LOG_NAME="Z3Gateway_NCP_Log.txt" # Located in Run directory
 
 ZIGBEED_APP_FILE_RELPATH_FROM_BUILD="debug/$ZIGBEED_PROJECT_NAME"
 Z3GATEWAY_APP_FILE_RELPATH_FROM_BUILD="debug/$Z3GATEWAY_PROJECT_NAME"
@@ -44,7 +45,8 @@ Z3GATEWAY_MAKEFILE="$Z3GATEWAY_PROJECT_DIR/$Z3GATEWAY_PROJECT_NAME.Makefile"
 Z3GATEWAY_BUILD_DIR="$Z3GATEWAY_PROJECT_DIR/build"
 Z3GATEWAY_RUN_DIR="$Z3GATEWAY_PROJECT_DIR/run"
 
-Z3GATEWAY_APP_LOG_FILE="$Z3GATEWAY_RUN_DIR/$Z3GATEWAY_DEFAULT_LOG_NAME"
+Z3GATEWAY_APP_RCP_LOG_FILE="$Z3GATEWAY_RUN_DIR/$Z3GATEWAY_DEFAULT_RCP_LOG_NAME"
+Z3GATEWAY_APP_NCP_LOG_FILE="$Z3GATEWAY_RUN_DIR/$Z3GATEWAY_DEFAULT_NCP_LOG_NAME"
 
 Z3GATEWAY_APP="$Z3GATEWAY_BUILD_DIR/$Z3GATEWAY_APP_FILE_RELPATH_FROM_BUILD"
 
@@ -194,20 +196,36 @@ while [[ $# -gt 0 ]]; do
             cd "$CURRENT_DIR" || exit
             exit
             ;;
-        -z3gateway-o|--z3gateway-open)
+        -z3gateway-rcp-o|--z3gateway-rcp-open)
             echo "Moving to Z3Gateway Run directory, $Z3GATEWAY_RUN_DIR"
             cd "$Z3GATEWAY_RUN_DIR" || exit
 
             if [ -n "$2" ]; then
-                Z3GATEWAY_APP_LOG_FILE="$Z3GATEWAY_RUN_DIR/$2"
-            # echo "Running Zigbeed application: $Z3GATEWAY_APP -p /dev/ttyZigbeeNCP -t 0 2>&1 | tee $2"
-            # sudo "$Z3GATEWAY_APP" -p /dev/ttyZigbeeNCP -t 0 2>&1 | tee "$2"
-                # echo "Running Zigbeed application: $Z3GATEWAY_APP -p /dev/ttyZigbeeNCP -t 0 2>&1 | tee $Z3GATEWAY_APP_LOG_FILE"
-                # sudo "$Z3GATEWAY_APP" -p /dev/ttyZigbeeNCP -t 0 2>&1 | tee "$Z3GATEWAY_APP_LOG_FILE"
+                Z3GATEWAY_APP_RCP_LOG_FILE="$Z3GATEWAY_RUN_DIR/$2"
             fi
 
-            echo "Running Zigbeed application: $Z3GATEWAY_APP -p /dev/ttyZigbeeNCP -t 0 2>&1 | tee $Z3GATEWAY_APP_LOG_FILE"
-            sudo "$Z3GATEWAY_APP" -p /dev/ttyZigbeeNCP -t 0 2>&1 | tee "$Z3GATEWAY_APP_LOG_FILE"
+            echo "Running Zigbeed RCP application: $Z3GATEWAY_APP -p /dev/ttyZigbeeNCP -t 0 2>&1 | tee $Z3GATEWAY_APP_RCP_LOG_FILE"
+            sudo "$Z3GATEWAY_APP" -p /dev/ttyZigbeeNCP -t 0 2>&1 | tee "$Z3GATEWAY_APP_RCP_LOG_FILE"
+            
+            exit
+            ;;
+        -z3gateway-ncp-o|--z3gateway-ncp-open)
+            echo "Moving to Z3Gateway Run directory, $Z3GATEWAY_RUN_DIR"
+            cd "$Z3GATEWAY_RUN_DIR" || exit
+
+            if [ -z "$2" ]; then
+                echo "Device name argument missing - eg. \"ACM0\" or \"ACM1\""
+                echo "cmd:[ls /dev/]"
+                ls /dev/
+                exit 1
+            fi
+
+            if [ -n "$3" ]; then
+                Z3GATEWAY_APP_NCP_LOG_FILE="$Z3GATEWAY_RUN_DIR/$3"
+            fi
+
+            echo "Running Zigbeed application: $Z3GATEWAY_APP -n 0 -p /dev/$2 2>&1 | tee $Z3GATEWAY_APP_NCP_LOG_FILE"
+            sudo "$Z3GATEWAY_APP" -n 0 -p /dev/$2 2>&1 | tee "$Z3GATEWAY_APP_NCP_LOG_FILE"
             
             exit
             ;;
