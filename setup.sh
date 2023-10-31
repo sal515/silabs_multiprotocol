@@ -10,6 +10,9 @@ COMMANDER_ZIP_NAME="SimplicityCommander-Linux.zip"
 COMMANDER_TAR_NAME="Commander-cli_linux_aarch32_1v16p0b1441.tar.bz"
 COMMANDER_CLI_APP_NAME="commander-cli"
 
+JLINK_32BIT_INSTALLER_NAME="JLink_Linux_V792n_arm.deb"
+JLINK_32BIT_INSTALLER_FILE="$CURRENT_DIR/src/$JLINK_32BIT_INSTALLER_NAME"
+
 
 GSDK_DOWNLOAD_LINK="https://github.com/SiliconLabs/gecko_sdk/releases/download/v4.3.2/gecko-sdk.zip"
 GSDK_DOWNLOAD_DIR=$CURRENT_DIR
@@ -39,6 +42,8 @@ COMMANDER_ZIP_FILE="$COMMANDER_DOWNLOAD_DIR/$COMMANDER_ZIP_NAME"
 COMMANDER_TAR_FILE="$COMMANDER_DOWNLOAD_DIR/$(basename $COMMANDER_ZIP_NAME .zip)/$COMMANDER_TAR_NAME"
 COMMANDER_CLI_DIR="$COMMANDER_DOWNLOAD_DIR/$COMMANDER_CLI_APP_NAME"
 COMMANDER_CLI_APP="$COMMANDER_CLI_DIR/$COMMANDER_CLI_APP_NAME"
+
+
 
 GSDK_ZIP_DOWNLOAD_FILE="$GSDK_DOWNLOAD_DIR/gsdk_download.zip"
 
@@ -86,6 +91,13 @@ while [[ $# -gt 0 ]]; do
                     exit 1
                 fi
             fi
+
+            echo "Installing JLink pre-req libraries"
+            sudo apt-get install libxrender1 libxcb-render0 libxcb-render-util0 libxcb-shape0 libxcb-randr0 libxcb-xfixes0 libxcb-sync1 libxcb-shm0 libxcb-icccm4 libxcb-keysyms1 libxcb-image0 libxkbcommon0 libxkbcommon-x11-0 libx11-xcb1 libsm6 libice6
+            sudo apt --fix-broken install
+
+            echo "Installing JLink"
+            sudo dpkg -i "$JLINK_32BIT_INSTALLER_FILE"
 
             echo "Creating the following directories:"
             echo "1. $COMMANDER_DOWNLOAD_DIR"
