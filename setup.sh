@@ -4,6 +4,13 @@
 CURRENT_DIR="$(pwd)"
 
 # ========================== Config to Modify if required =============================================
+COMMANDER_DOWNLOAD_LINK="https://www.silabs.com/documents/login/software/SimplicityCommander-Linux.zip"
+COMMANDER_DIR_NAME="commander"
+COMMANDER_ZIP_NAME="SimplicityCommander-Linux.zip"
+COMMANDER_TAR_NAME="Commander-cli_linux_aarch32_1v16p0b1441.tar.bz"
+COMMANDER_CLI_APP_NAME="commander-cli"
+
+
 GSDK_DOWNLOAD_LINK="https://github.com/SiliconLabs/gecko_sdk/releases/download/v4.3.2/gecko-sdk.zip"
 GSDK_DOWNLOAD_DIR=$CURRENT_DIR
 GSDK_UNZIPPED_DIR="$CURRENT_DIR/gsdk_unzipped"
@@ -26,6 +33,13 @@ ZIGBEED_APP_FILE_RELPATH_FROM_BUILD="debug/$ZIGBEED_PROJECT_NAME"
 Z3GATEWAY_APP_FILE_RELPATH_FROM_BUILD="debug/$Z3GATEWAY_PROJECT_NAME"
 
 # ========================== Typically no modification required =======================================
+
+COMMANDER_DOWNLOAD_DIR="$CURRENT_DIR/$COMMANDER_DIR_NAME"
+COMMANDER_ZIP_FILE="$COMMANDER_DOWNLOAD_DIR/$COMMANDER_ZIP_NAME"
+COMMANDER_TAR_FILE="$COMMANDER_DOWNLOAD_DIR/$(basename $COMMANDER_ZIP_NAME .zip)/$COMMANDER_TAR_NAME"
+COMMANDER_CLI_DIR="$COMMANDER_DOWNLOAD_DIR/$COMMANDER_CLI_APP_NAME"
+COMMANDER_CLI_APP="$COMMANDER_CLI_DIR/$COMMANDER_CLI_APP_NAME"
+
 GSDK_ZIP_DOWNLOAD_FILE="$GSDK_DOWNLOAD_DIR/gsdk_download.zip"
 
 GSDK_ZIGBEED_CONFIG_FILE="$GSDK_UNZIPPED_DIR/$ZIGBEED_CONFIG_IN_GSDK_FILE"
@@ -58,6 +72,37 @@ while [[ $# -gt 0 ]]; do
         -h|--help)
             echo "Help usage is not implemented yet"
             echo "Usage: $0 [options]"
+            exit
+            ;;
+        -commander-s|--commander-setup)
+            if [ -d "$COMMANDER_DOWNLOAD_DIR" ]; then
+                echo "Commander directory already exists."
+                read -r -p "Do you want to delete it and proceed? (y/n): " answer
+                if [ "$answer" = "y" ]; then
+                    # Remove the existing directory and its contents
+                    rm -r "$COMMANDER_DOWNLOAD_DIR"
+                else
+                    echo "Commander download and installation cancelled."
+                    exit 1
+                fi
+            fi
+
+            echo "Creating the following directories:"
+            echo "1. $COMMANDER_DOWNLOAD_DIR"
+
+            mkdir "$COMMANDER_DOWNLOAD_DIR"
+
+            echo "Downloading commander to $COMMANDER_DOWNLOAD_DIR"
+            wget -P "$COMMANDER_DOWNLOAD_DIR" "$COMMANDER_DOWNLOAD_LINK"
+
+            echo "Unpack commander [$COMMANDER_ZIP_FILE] & [$COMMANDER_TAR_FILE] to $COMMANDER_DOWNLOAD_DIR"
+            unzip "$COMMANDER_ZIP_FILE" -d "$COMMANDER_DOWNLOAD_DIR"
+            tar -xjf "$COMMANDER_TAR_FILE" -C "$COMMANDER_DOWNLOAD_DIR"
+
+            echo "Command CLI application path: $COMMANDER_CLI_DIR"
+            $COMMANDER_CLI_APP -v
+            cd "$COMMANDER_CLI_DIR" || exit
+
             exit
             ;;
         -gsdk-du|--gsdk-download-unzip)
