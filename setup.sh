@@ -204,7 +204,7 @@ while [[ $# -gt 0 ]]; do
                 Z3GATEWAY_APP_RCP_LOG_FILE="$Z3GATEWAY_RUN_DIR/$2"
             fi
 
-            echo "Running Zigbeed RCP application: $Z3GATEWAY_APP -p /dev/ttyZigbeeNCP -t 0 2>&1 | tee $Z3GATEWAY_APP_RCP_LOG_FILE"
+            echo "Running RCP Z3Gateway application: $Z3GATEWAY_APP -p /dev/ttyZigbeeNCP -t 0 2>&1 | tee $Z3GATEWAY_APP_RCP_LOG_FILE"
             sudo "$Z3GATEWAY_APP" -p /dev/ttyZigbeeNCP -t 0 2>&1 | tee "$Z3GATEWAY_APP_RCP_LOG_FILE"
             
             exit
@@ -224,8 +224,8 @@ while [[ $# -gt 0 ]]; do
                 Z3GATEWAY_APP_NCP_LOG_FILE="$Z3GATEWAY_RUN_DIR/$3"
             fi
 
-            echo "Running Zigbeed application: $Z3GATEWAY_APP -n 0 -p /dev/$2 2>&1 | tee $Z3GATEWAY_APP_NCP_LOG_FILE"
-            sudo "$Z3GATEWAY_APP" -n 0 -p /dev/$2 2>&1 | tee "$Z3GATEWAY_APP_NCP_LOG_FILE"
+            echo "Running NCP Z3Gateway application: $Z3GATEWAY_APP -n 0 -p /dev/$2 2>&1 | tee $Z3GATEWAY_APP_NCP_LOG_FILE"
+            sudo "$Z3GATEWAY_APP" -n 0 -p "/dev/$2" 2>&1 | tee "$Z3GATEWAY_APP_NCP_LOG_FILE"
             
             exit
             ;;
