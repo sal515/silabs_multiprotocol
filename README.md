@@ -12,6 +12,8 @@
     Codename:       bullseye
     ```
 
+<!-- TODO FIXME Update release version -->
+
 - All the firmwares mentioned were created with Silicon Labs GSDKv4.3.2.
 
 ## Hardware
