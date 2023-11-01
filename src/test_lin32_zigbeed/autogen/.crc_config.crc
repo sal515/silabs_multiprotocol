@@ -1,0 +1,12 @@
+#CRC Codes for initially generated config files -- do not modify!
+legacy_common_ash_config.h=-318977728
+lower-mac-spinel-config.h=227585919
+sl_mbedtls_config.h=-1988466528
+sl_mbedtls_device_config.h=160633593
+sl_zigbee_binding_table_config.h=-1490498319
+sl_zigbee_green_power_config.h=855682378
+sl_zigbee_light_link_config.h=-1109633917
+sl_zigbee_pro_stack_config.h=-1086802639
+sl_zigbee_security_link_keys_config.h=-1009519596
+sl_zigbee_source_route_config.h=-1856623473
+zigbee_sleep_config.h=911544330

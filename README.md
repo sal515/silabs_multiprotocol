@@ -14,6 +14,12 @@
 
 <!-- TODO FIXME Update release version -->
 
+<!-- TODO FIXME Fix up the paths in Setup Script and Test -->
+
+<!--  TODO FIXME Add Enery Scan code to Z3Gateway -->
+
+<!-- Add manufacturing library to mg12 -->
+
 - All the firmwares mentioned were created with Silicon Labs GSDKv4.3.2.
 
 ## Hardware
@@ -53,6 +59,8 @@
 - Download, unpack and install CPCd on the Host machine:
 
     `./setup.sh -cpcd-dui`
+
+<!-- TODO FIXME INSTALL SOCAT?  -->
 
 - Build Zigbeed project provided in the `src` repository directory
 
@@ -101,7 +109,9 @@
   - Initialization of the MFGLIB to send packets
     - `TODO FIXME`
   - Commands to send the MFGLIB packets
-    - `TODO FIXME`
+
+    - `TODO FIXME` 
+    [Section 3.4 AN1162](https://www.silabs.com/documents/public/application-notes/an1162-using-manufacturing-library.pdf)
 
 - Our goal is to observe and compare the RSSI values seen in the Z3Gateway logs with and without transmission in the air.
   - TODO FIXME
