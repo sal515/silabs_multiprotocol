@@ -75,8 +75,42 @@ Z3GATEWAY_APP_NCP_LOG_FILE="$Z3GATEWAY_RUN_DIR/$Z3GATEWAY_DEFAULT_NCP_LOG_NAME"
 
 Z3GATEWAY_APP="$Z3GATEWAY_BUILD_DIR/$Z3GATEWAY_APP_FILE_RELPATH_FROM_BUILD"
 
-# =========================================================================
+CPCD_REQUIRED_LIBRARIES=("cmake")
 
+# ========================== Functions ====================================
+
+# Function to handle directory cleanup and proceed prompt
+handle_directory_cleanup() {
+    local dir_to_check="$1"
+    local confirmation_message="$2"
+
+    if [ -d "$dir_to_check" ]; then
+        echo "$confirmation_message"
+        read -r -p "Do you want to delete it and proceed? (y/n): " answer
+        if [ "$answer" = "y" ]; then
+            # Remove the existing directory and its contents
+            rm -rf "$dir_to_check"
+        else
+            echo "Operation cancelled."
+            exit 1
+        fi
+    fi
+}
+
+# Function to install Debian packages
+install_apt_packages() {
+    local package_list=("$@")  # Get the list of package names from the function's parameters
+    for package in "${package_list[@]}"; do
+        if dpkg -l | grep -q "ii  $package "; then
+            echo "$package is already installed."
+        else
+            echo "Installing $package..."
+            sudo apt-get install -y "$package"
+        fi
+    done
+}
+
+# ========================== Functions ====================================
 
 while [[ $# -gt 0 ]]; do
     case $1 in
@@ -86,17 +120,7 @@ while [[ $# -gt 0 ]]; do
             exit
             ;;
         -commander-s|--commander-setup)
-            if [ -d "$COMMANDER_DOWNLOAD_DIR" ]; then
-                echo "Commander directory already exists."
-                read -r -p "Do you want to delete it and proceed? (y/n): " answer
-                if [ "$answer" = "y" ]; then
-                    # Remove the existing directory and its contents
-                    rm -r "$COMMANDER_DOWNLOAD_DIR"
-                else
-                    echo "Commander download and installation cancelled."
-                    exit 1
-                fi
-            fi
+            handle_directory_cleanup "$COMMANDER_DOWNLOAD_DIR" "Commander directory already exists."
 
             echo "Installing JLink pre-req libraries"
             sudo apt-get -y install libxrender1 libxcb-render0 libxcb-render-util0 libxcb-shape0 libxcb-randr0 libxcb-xfixes0 libxcb-sync1 libxcb-shm0 libxcb-icccm4 libxcb-keysyms1 libxcb-image0 libxkbcommon0 libxkbcommon-x11-0 libx11-xcb1 libsm6 libice6
@@ -124,17 +148,7 @@ while [[ $# -gt 0 ]]; do
             exit
             ;;
         -slc-dui|--slc-cli-download-unzip-install)
-            if [ -d "$SLC_UNZIPPED_DIR" ]; then
-                echo "SLC CLI unzipped directory already exists."
-                read -r -p "Do you want to delete it and proceed? (y/n): " answer
-                if [ "$answer" = "y" ]; then
-                    # Remove the existing directory and its contents
-                    rm -r "$SLC_UNZIPPED_DIR"
-                else
-                    echo "SLC CLI download and installation cancelled."
-                    exit 1
-                fi
-            fi
+            handle_directory_cleanup "$SLC_UNZIPPED_DIR" "SLC CLI unzipped directory already exists."
 
             echo "SLC CLI downloading to directory: $SLC_DOWNLOAD_DIR"
             wget -O "$SLC_CLI_ZIP_DOWNLOAD_FILE" "$SLC_DOWNLOAD_LINK"
@@ -148,17 +162,7 @@ while [[ $# -gt 0 ]]; do
             exit
             ;;        
         -gsdk-du|--gsdk-download-unzip)
-            if [ -d "$GSDK_UNZIPPED_DIR" ]; then
-                echo "GSDK unzipped directory already exists."
-                read -r -p "Do you want to delete it and proceed? (y/n): " answer
-                if [ "$answer" = "y" ]; then
-                    # Remove the existing directory and its contents
-                    rm -r "$GSDK_UNZIPPED_DIR"
-                else
-                    echo "GSDK download and installation cancelled."
-                    exit 1
-                fi
-            fi
+            handle_directory_cleanup "$GSDK_UNZIPPED_DIR" "GSDK unzipped directory already exists."
 
             echo "GSDK downloading to directory: $GSDK_DOWNLOAD_DIR"
             wget -O "$GSDK_ZIP_DOWNLOAD_FILE" "$GSDK_DOWNLOAD_LINK"
@@ -171,17 +175,9 @@ while [[ $# -gt 0 ]]; do
         -cpcd-dui|--cpcd-download-unzip-install)
         # Reference: Section 3.1 to 3.3 
         # https://www.silabs.com/documents/public/application-notes/an1351-using-co-processor-communication_daemon.pdf
-            if [ -d "$CPCD_DOWNLOAD_DIR" ]; then
-                echo "CPCd directory already exists."
-                read -r -p "Do you want to delete it and proceed? (y/n): " answer
-                if [ "$answer" = "y" ]; then
-                    # Remove the existing directory and its contents
-                    rm -r "$CPCD_DOWNLOAD_DIR"
-                else
-                    echo "CPCd download and installation cancelled."
-                    exit 1
-                fi
-            fi
+            handle_directory_cleanup "$CPCD_DOWNLOAD_DIR" "CPCd directory already exists. [$CPCD_DOWNLOAD_DIR]"
+
+            install_apt_packages "${CPCD_REQUIRED_LIBRARIES[@]}"
 
             echo "Creating the following directories:"
             echo "1. $CPCD_DOWNLOAD_DIR"
@@ -219,17 +215,7 @@ while [[ $# -gt 0 ]]; do
             exit
             ;;
         -zigbeed-b|--zigbeed-build)
-            if [ -d "$ZIGBEED_BUILD_DIR" ]; then
-                echo "Zigbeed build directory already exists."
-                read -r -p "Do you want to delete it and proceed? (y/n): " answer
-                if [ "$answer" = "y" ]; then
-                    # Remove the existing directory and its contents
-                    rm -r "$ZIGBEED_BUILD_DIR"
-                else
-                    echo "Zigbeed build and copy of config cancelled."
-                    exit 1
-                fi
-            fi
+            handle_directory_cleanup "$ZIGBEED_BUILD_DIR" "Zigbeed build directory already exists."
 
             echo "Creating the following directories:"
             echo "1. $ZIGBEED_BUILD_DIR"
@@ -256,17 +242,7 @@ while [[ $# -gt 0 ]]; do
             exit
             ;;
         -z3gateway-b|--z3gateway-build)
-            if [ -d "$Z3GATEWAY_BUILD_DIR" ]; then
-                echo "Z3Gateway build directory already exists."
-                read -r -p "Do you want to delete it and proceed? (y/n): " answer
-                if [ "$answer" = "y" ]; then
-                    # Remove the existing directory and its contents
-                    rm -r "$Z3GATEWAY_BUILD_DIR"
-                else
-                    echo "Z3Gateway build and copy of config cancelled."
-                    exit 1
-                fi
-            fi
+            handle_directory_cleanup "$Z3GATEWAY_BUILD_DIR" "Z3Gateway build directory already exists."
             
             echo "Creating the following directories:"
             echo "1. $Z3GATEWAY_BUILD_DIR"
