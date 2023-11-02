@@ -99,7 +99,7 @@ while [[ $# -gt 0 ]]; do
             fi
 
             echo "Installing JLink pre-req libraries"
-            sudo apt-get install libxrender1 libxcb-render0 libxcb-render-util0 libxcb-shape0 libxcb-randr0 libxcb-xfixes0 libxcb-sync1 libxcb-shm0 libxcb-icccm4 libxcb-keysyms1 libxcb-image0 libxkbcommon0 libxkbcommon-x11-0 libx11-xcb1 libsm6 libice6
+            sudo apt-get -y install libxrender1 libxcb-render0 libxcb-render-util0 libxcb-shape0 libxcb-randr0 libxcb-xfixes0 libxcb-sync1 libxcb-shm0 libxcb-icccm4 libxcb-keysyms1 libxcb-image0 libxkbcommon0 libxkbcommon-x11-0 libx11-xcb1 libsm6 libice6
             sudo apt --fix-broken install
 
             echo "Installing JLink"
