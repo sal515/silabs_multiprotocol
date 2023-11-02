@@ -13,23 +13,28 @@ COMMANDER_CLI_APP_NAME="commander-cli"
 JLINK_32BIT_INSTALLER_NAME="JLink_Linux_V792n_arm.deb"
 JLINK_32BIT_INSTALLER_FILE="$CURRENT_DIR/src/$JLINK_32BIT_INSTALLER_NAME"
 
-NCP_FIRMWARE_FILE="$CURRENT_DIR/src/4180B_FW/4180B_mg21_432_ncp-uart-hw_RSSI.hex"
-RCP_FIRMWARE_FILE="$CURRENT_DIR/src/4180B_FW/4180B_mg21_432_rcp-uart-802154_RSSI.hex"
+NCP_FIRMWARE_FILE="$CURRENT_DIR/src/test_4180b_ncp-uart-hw.hex"
+RCP_FIRMWARE_FILE="$CURRENT_DIR/src/test_4180b_rcp-uart-802154-blehci.hex"
+BTL_FIRMWARE_FILE="$CURRENT_DIR/src/test_4180b_bootloader-uart-xmodem.hex"
 
 GSDK_DOWNLOAD_LINK="https://github.com/SiliconLabs/gecko_sdk/releases/download/v4.3.2/gecko-sdk.zip"
 GSDK_DOWNLOAD_DIR=$CURRENT_DIR
 GSDK_UNZIPPED_DIR="$CURRENT_DIR/gsdk_unzipped"
+
+SLC_DOWNLOAD_LINK="https://www.silabs.com/documents/login/software/slc_cli_linux.zip"
+SLC_DOWNLOAD_DIR=$CURRENT_DIR
+SLC_UNZIPPED_DIR="$CURRENT_DIR/slc_cli_unzipped"
 
 CPCD_DOWNLOAD_LINK="https://github.com/SiliconLabs/cpc-daemon/archive/refs/tags/v4.3.2.zip"
 CPCD_DOWNLOAD_DIR="$CURRENT_DIR/cpcd"
 CPCD_UNZIP_DIR_NAME="cpc-daemon-4.3.2"
 CPCD_CONFIG_FILE="$CURRENT_DIR/src/cpcd.conf"
 
-ZIGBEED_PROJECT_NAME="lin32_432_zigbeed_RSSI"
+ZIGBEED_PROJECT_NAME="test_lin32_zigbeed"
 ZIGBEED_PROJECT_DIR="$CURRENT_DIR/src/$ZIGBEED_PROJECT_NAME"
-ZIGBEED_CONFIG_IN_GSDK_FILE="app/host/multiprotocol/zigbeed/multiprotocol-container/_artifacts/etc/zigbeed.conf"
+ZIGBEED_CONFIG_FILE="src/zigbeed.conf"
 
-Z3GATEWAY_PROJECT_NAME="lin32_432_Z3Gateway_RSSI"
+Z3GATEWAY_PROJECT_NAME="test_lin32_Z3Gateway"
 Z3GATEWAY_PROJECT_DIR="$CURRENT_DIR/src/$Z3GATEWAY_PROJECT_NAME"
 Z3GATEWAY_DEFAULT_RCP_LOG_NAME="Z3Gateway_RCP_Log.txt" # Located in Run directory
 Z3GATEWAY_DEFAULT_NCP_LOG_NAME="Z3Gateway_NCP_Log.txt" # Located in Run directory
@@ -46,8 +51,9 @@ COMMANDER_CLI_DIR="$COMMANDER_DOWNLOAD_DIR/$COMMANDER_CLI_APP_NAME"
 COMMANDER_CLI_APP="$COMMANDER_CLI_DIR/$COMMANDER_CLI_APP_NAME"
 
 GSDK_ZIP_DOWNLOAD_FILE="$GSDK_DOWNLOAD_DIR/gsdk_download.zip"
+SLC_CLI_ZIP_DOWNLOAD_FILE="$SLC_DOWNLOAD_DIR/slc_download.zip"
 
-GSDK_ZIGBEED_CONFIG_FILE="$GSDK_UNZIPPED_DIR/$ZIGBEED_CONFIG_IN_GSDK_FILE"
+GSDK_ZIGBEED_CONFIG_FILE="$ZIGBEED_CONFIG_FILE"
 SYSTEM_ZIGBEED_CONFIG_DIR="/usr/local/etc/"
 
 CPCD_BUILD_DIR="$CPCD_DOWNLOAD_DIR/build"
@@ -117,6 +123,30 @@ while [[ $# -gt 0 ]]; do
 
             exit
             ;;
+        -slc-dui|--slc-cli-download-unzip-install)
+            if [ -d "$SLC_UNZIPPED_DIR" ]; then
+                echo "SLC CLI unzipped directory already exists."
+                read -r -p "Do you want to delete it and proceed? (y/n): " answer
+                if [ "$answer" = "y" ]; then
+                    # Remove the existing directory and its contents
+                    rm -r "$SLC_UNZIPPED_DIR"
+                else
+                    echo "SLC CLI download and installation cancelled."
+                    exit 1
+                fi
+            fi
+
+            echo "SLC CLI downloading to directory: $SLC_DOWNLOAD_DIR"
+            wget -O "$SLC_CLI_ZIP_DOWNLOAD_FILE" "$SLC_DOWNLOAD_LINK"
+
+            echo "SLC CLI unzipping to directory: $SLC_UNZIPPED_DIR"
+            unzip "$SLC_CLI_ZIP_DOWNLOAD_FILE" -d "$SLC_UNZIPPED_DIR"
+
+
+
+
+            exit
+            ;;        
         -gsdk-du|--gsdk-download-unzip)
             if [ -d "$GSDK_UNZIPPED_DIR" ]; then
                 echo "GSDK unzipped directory already exists."
@@ -181,6 +211,8 @@ while [[ $# -gt 0 ]]; do
             exit
             ;;
         -socat-o|--socat-open)
+            echo "Trying to install socat again... " 
+            sudo apt-get install socat
             echo "Socat program starting: cmd:[socat pty,link=/dev/ttyZigbeeNCP pty,link=/tmp/ttyZigbeeNCP]"
             sudo socat pty,link=/dev/ttyZigbeeNCP pty,link=/tmp/ttyZigbeeNCP
             echo "Socat exiting..."
@@ -211,7 +243,7 @@ while [[ $# -gt 0 ]]; do
             make -f "$ZIGBEED_MAKEFILE" 
 
             echo "Moving back to setup script directory, $CURRENT_DIR"
-            cd "$CURRENT_DIR" || 
+            cd "$CURRENT_DIR" || exit
             
             echo "Copy Zigbeed configuration file to $SYSTEM_ZIGBEED_CONFIG_DIR using sudo cp"
             sudo cp "$GSDK_ZIGBEED_CONFIG_FILE" "$SYSTEM_ZIGBEED_CONFIG_DIR"
@@ -295,6 +327,11 @@ while [[ $# -gt 0 ]]; do
         -flash-rcp|--flash-rcp-firmware)
             echo "Flashing RCP firmware to DUT board"
             "$COMMANDER_CLI_APP" flash "$RCP_FIRMWARE_FILE"
+            exit
+            ;;
+        -flash-btl|--flash-bootloader-firmware)
+            echo "Flashing bootloader firmware to DUT board"
+            "$COMMANDER_CLI_APP" flash "$BTL_FIRMWARE_FILE"
             exit
             ;;
         *)
