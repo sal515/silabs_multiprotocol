@@ -362,6 +362,8 @@ void changeNwkKeyCommand(sl_cli_command_arg_t *arguments);
 void printNextKeyCommand(sl_cli_command_arg_t *arguments);
 void versionCommand(sl_cli_command_arg_t *arguments);
 void setTxPowerCommand(sl_cli_command_arg_t *arguments);
+void energyScanStartCommand(sl_cli_command_arg_t *arguments);
+void energyScanStopCommand(sl_cli_command_arg_t *arguments);
 
 // Command structs. Names are in the format : cli_cmd_{command group name}_{command name}
 // In order to support hyphen in command and group name, every occurence of it while
@@ -1806,6 +1808,18 @@ static const sl_cli_command_info_t cli_cmd_custom_txPower = \
                   "" SL_CLI_UNIT_SEPARATOR,
                  {SL_CLI_ARG_INT8, SL_CLI_ARG_END, });
 
+static const sl_cli_command_info_t cli_cmd_custom_energyScanStart = \
+  SL_CLI_COMMAND(energyScanStartCommand,
+                 "",
+                  "",
+                 {SL_CLI_ARG_END, });
+
+static const sl_cli_command_info_t cli_cmd_custom_energyScanStop = \
+  SL_CLI_COMMAND(energyScanStopCommand,
+                 "",
+                  "",
+                 {SL_CLI_ARG_END, });
+
 
 // Create group command tables and structs if cli_groups given
 // in template. Group name is suffixed with _group_table for tables
@@ -2448,6 +2462,8 @@ static const sl_cli_command_entry_t custom_group_table[] = {
   { "printNextKey", &cli_cmd_custom_printNextKey, false },
   { "version", &cli_cmd_custom_version, false },
   { "txPower", &cli_cmd_custom_txPower, false },
+  { "energyScanStart", &cli_cmd_custom_energyScanStart, false },
+  { "energyScanStop", &cli_cmd_custom_energyScanStop, false },
   { NULL, NULL, false },
 };
 static const sl_cli_command_info_t cli_cmd_grp_custom = \

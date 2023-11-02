@@ -38,6 +38,68 @@
 
 extern EmberStatus emberAfTrustCenterStartNetworkKeyUpdate(void);
 
+
+#include "scan-dispatch.h"
+#include "network-creator-config.h"
+
+#define ENERGY_SCAN_RESTART_DELAY (1000U)
+
+static uint32_t energy_scan_restart_count = 0;
+static sl_zigbee_event_t energy_scan_event;
+
+void scanHandlerCrashTest(EmberAfPluginScanDispatchScanResults *results){
+   EmberNetworkScanType scanType
+    = emberAfPluginScanDispatchScanResultsGetScanType(results);
+
+  if (emberAfPluginScanDispatchScanResultsAreFailure(results)) {
+    // If we are here, that means the call to emberStartScan was a failure
+    // in the scan-dispatch plugin (see scan-dispatch.h). So fail.
+    sl_zigbee_app_debug_println("\nScan failure: 0x%02X", results->status);
+  } else { // success
+    if (emberAfPluginScanDispatchScanResultsAreComplete(results)) {
+      sl_zigbee_app_debug_println("Scan complete. Channel: %d. Status: 0x%X\n #%lu - Restart Energy Scan in %lu ms <====",
+                   results->channel,
+                   results->status,
+                   energy_scan_restart_count++,
+                   ENERGY_SCAN_RESTART_DELAY);
+      sl_zigbee_event_set_delay_ms(&energy_scan_event,
+                                   ENERGY_SCAN_RESTART_DELAY);
+    } else { // results
+      if (scanType == EMBER_ACTIVE_SCAN) {
+        sl_zigbee_app_debug_println("Found network!");
+      } else if (scanType == EMBER_ENERGY_SCAN) {
+        sl_zigbee_app_debug_print("Energy scan results: ");
+        sl_zigbee_app_debug_println("Channel: %d. Rssi: %d",
+                     results->channel,
+                     results->rssi);
+      }
+    }
+  }
+}
+
+void startEnergyScan() {
+  // Scan Dispatch Test
+
+  sl_zigbee_app_debug_println("\n===> Scan Start");
+  EmberStatus status;
+  EmberAfPluginScanDispatchScanData data = {
+    .scanType = EMBER_ENERGY_SCAN,
+    .channelMask = EMBER_ALL_802_15_4_CHANNELS_MASK,
+    .duration    = EMBER_AF_PLUGIN_NETWORK_CREATOR_SCAN_DURATION,
+    .handler     = scanHandlerCrashTest
+  };
+
+  status = emberAfPluginScanDispatchScheduleScan(&data);
+  sl_zigbee_app_debug_println("Energy Scan result: 0x%02X", status);
+}
+
+static void energy_scan_event_handler(sl_zigbee_event_t *event)
+{
+  startEnergyScan();
+}
+
+
+
 //----------------------
 // ZCL commands handling
 
@@ -137,7 +199,56 @@ void emberAfMainInitCallback(void)
                                       0xFFFF,
                                       ZCL_DIRECTION_CLIENT_TO_SERVER,
                                       zcl_ias_ace_cluster_server_command_handler);
+
+  // Enable Scan events
+  sl_zigbee_event_init(&energy_scan_event, energy_scan_event_handler);
 }
+
+bool emberAfPreMessageReceivedCallback(EmberAfIncomingMessage *incomingMessage)
+{
+  sl_zigbee_app_debug_println("\n---> EmberAfIncomingMessage:\n"
+                              "type: 0x%02X\n"
+                              "msgLen: 0x%04X\n"
+                              "source: 0x%04X\n"
+                              "lastHopLqi: 0x%02X\n"
+                              "lastHopRssi: %d\n"
+                              "bindingTableIndex: 0x%02X\n"
+                              "addressTableIndex: 0x%02X\n"
+                              "networkIndex: 0x%02X\n"
+                              "Incoming Message buffer: ",
+                              incomingMessage->type,
+                              incomingMessage->apsFrame->sequence,
+                              incomingMessage->msgLen,
+                              incomingMessage->source,
+                              incomingMessage->lastHopLqi,
+                              incomingMessage->lastHopRssi,
+                              incomingMessage->bindingTableIndex,
+                              incomingMessage->addressTableIndex,
+                              incomingMessage->networkIndex);
+
+  sl_zigbee_app_debug_print_buffer(incomingMessage->message, incomingMessage->msgLen, 1);
+
+  sl_zigbee_app_debug_println("\n---> EmberApsFrame:\n"
+                              "profileId: 0x%04X\n"
+                              "clusterId: 0x%04X\n"
+                              "sourceEndpoint: 0x%02X\n"
+                              "destinationEndpoint: 0x%02X\n"
+                              "options: 0x%04X\n"
+                              "groupId: 0x%04X\n"
+                              "sequence: 0x%02X\n"
+                              "radius: 0x%02X\n",
+                              incomingMessage->apsFrame->profileId,
+                              incomingMessage->apsFrame->clusterId,
+                              incomingMessage->apsFrame->sourceEndpoint,
+                              incomingMessage->apsFrame->destinationEndpoint,
+                              incomingMessage->apsFrame->options,
+                              incomingMessage->apsFrame->groupId,
+                              incomingMessage->apsFrame->sequence,
+                              incomingMessage->apsFrame->radius);
+
+  return false;
+}
+
 
 #ifdef SL_CATALOG_CLI_PRESENT
 //-------------------------------------
@@ -280,6 +391,30 @@ void setTxPowerCommand(sl_cli_command_arg_t *arguments)
   int8_t dBm = sl_cli_get_argument_int8(arguments, 0);
 
   emberSetRadioPower(dBm);
+}
+
+/*
+// SLCP File Addition and then generate
+- name: cli_command
+  priority: 0
+  value: {group: custom, name: energyScanStart, handler: energyScanStartCommand}
+*/
+void energyScanStartCommand(sl_cli_command_arg_t *arguments){
+  (void)arguments;
+  sl_zigbee_app_debug_println("\nEnergy Scan Event is executed");
+  sl_zigbee_event_set_active(&energy_scan_event);
+}
+
+/*
+// SLCP File Addition and then generate
+- name: cli_command
+  priority: 0
+  value: {group: custom, name: energyScanStop, handler: energyScanStopCommand}
+*/
+void energyScanStopCommand(sl_cli_command_arg_t *arguments){
+  (void)arguments;
+  sl_zigbee_app_debug_println("\nFunction0 is executed - Inactive all custom events");
+  sl_zigbee_event_set_inactive(&energy_scan_event);
 }
 
 #endif

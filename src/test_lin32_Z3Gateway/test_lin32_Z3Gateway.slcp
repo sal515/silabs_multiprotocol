@@ -92,6 +92,12 @@ template_contribution:
     handler: setTxPowerCommand
     argument:
     - {type: int8}
+- name: cli_command
+  priority: 0
+  value: {group: custom, name: energyScanStart, handler: energyScanStartCommand}
+- name: cli_command
+  priority: 0
+  value: {group: custom, name: energyScanStop, handler: energyScanStopCommand}
 configuration:
 - {name: SL_BOARD_ENABLE_VCOM, value: '1'}
 - {name: SL_IOSTREAM_USART_VCOM_FLOW_CONTROL_TYPE, value: usartHwFlowControlCtsAndRts}
@@ -103,6 +109,6 @@ configuration:
 - {name: SL_ZIGBEE_EVENT_DEBUG_ENABLED, value: '1'}
 ui_hints:
   highlight:
-  - {path: null, focus: true}
+  - {path: '', focus: true}
   - {path: readme.html}
 
