@@ -105,6 +105,8 @@
 
   `./setup.sh  -z3gateway-rcp-o`
 
+  <!-- STOP ENERGY SCAN not working -->
+
 - The logs from the RCP z3gateway mode shoud be automatically stored in the **`run`** directory of the Z3Gateway Project in the PATH=`<path>/silabs_multiprotocol/src/test_lin32_Z3Gateway/run/Z3Gateway_RCP_Log.txt`
 
 - Flash the firmware with MFGLIB library to the Random Packet Sender node:
