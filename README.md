@@ -16,8 +16,6 @@
 
 <!-- TODO FIXME Fix up the paths in Setup Script and Test -->
 
-<!--  TODO FIXME Add Enery Scan code to Z3Gateway -->
-
 <!-- Add manufacturing library to mg12 -->
 
 - All the firmwares mentioned were created with Silicon Labs GSDKv4.3.2.
@@ -38,11 +36,18 @@
 
 ### Natively Compiling the Host Application on RPi - Using setup.sh
 
-- Clone the branch to the rpi
-  
-  `TODO FIXME command to clone`
+- Clone the branch to the RPi
+
+  `git clone https://github.com/sal515/silabs_multiprotocol.git`
 
 - Move to the Cloned directory
+
+  `cd silabs_multiprotocol`
+
+- Switch to the test branch after cloning the repo to the RPi
+  
+  `git checkout rssi_test`
+
 
 - Make the setup script executable
 
@@ -59,8 +64,6 @@
 - Download, unpack and install CPCd on the Host machine:
 
     `./setup.sh -cpcd-dui`
-
-<!-- TODO FIXME INSTALL SOCAT?  -->
 
 - Build Zigbeed project provided in the `src` repository directory
 
