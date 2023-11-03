@@ -199,6 +199,7 @@ while [[ $# -gt 0 ]]; do
             echo "cmake CPCd and then install in the directory: $CPCD_BUILD_DIR"
             cmake -B "$CPCD_BUILD_DIR" "$CPCD_UNZIPPED_DIR"
             sudo make -C "$CPCD_BUILD_DIR" install
+            sudo ldconfig
 
             exit
             ;;
@@ -233,6 +234,8 @@ while [[ $# -gt 0 ]]; do
             
             echo "Copy Zigbeed configuration file to $SYSTEM_ZIGBEED_CONFIG_DIR using sudo cp"
             sudo cp "$GSDK_ZIGBEED_CONFIG_FILE" "$SYSTEM_ZIGBEED_CONFIG_DIR"
+
+            ls "$SYSTEM_ZIGBEED_CONFIG_DIR"
 
             exit
             ;;
