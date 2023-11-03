@@ -76,7 +76,7 @@ Z3GATEWAY_APP_NCP_LOG_FILE="$Z3GATEWAY_RUN_DIR/$Z3GATEWAY_DEFAULT_NCP_LOG_NAME"
 Z3GATEWAY_APP="$Z3GATEWAY_BUILD_DIR/$Z3GATEWAY_APP_FILE_RELPATH_FROM_BUILD"
 
 COMMANDER_REQUIRED_LIBRARIES=("libxrender1" "libxcb-render0" "libxcb-render-util0" "libxcb-shape0" "libxcb-randr0" "libxcb-xfixes0" "libxcb-sync1" "libxcb-shm0" "libxcb-icccm4" "libxcb-keysyms1" "libxcb-image0" "libxkbcommon0" "libxkbcommon-x11-0" "libx11-xcb1" "libsm6" "libice6")
-CPCD_REQUIRED_LIBRARIES=("libmbedtls-dev, cmake")
+CPCD_REQUIRED_LIBRARIES=("libmbedtls-dev" "cmake")
 SOCAT_REQUIRED_LIBRARIES=("socat")
 
 # ========================== Functions ====================================
