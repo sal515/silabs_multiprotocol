@@ -75,7 +75,9 @@ Z3GATEWAY_APP_NCP_LOG_FILE="$Z3GATEWAY_RUN_DIR/$Z3GATEWAY_DEFAULT_NCP_LOG_NAME"
 
 Z3GATEWAY_APP="$Z3GATEWAY_BUILD_DIR/$Z3GATEWAY_APP_FILE_RELPATH_FROM_BUILD"
 
-CPCD_REQUIRED_LIBRARIES=("cmake")
+COMMANDER_REQUIRED_LIBRARIES=("libxrender1" "libxcb-render0" "libxcb-render-util0" "libxcb-shape0" "libxcb-randr0" "libxcb-xfixes0" "libxcb-sync1" "libxcb-shm0" "libxcb-icccm4" "libxcb-keysyms1" "libxcb-image0" "libxkbcommon0" "libxkbcommon-x11-0" "libx11-xcb1" "libsm6" "libice6")
+CPCD_REQUIRED_LIBRARIES=("libmbedtls-dev, cmake")
+SOCAT_REQUIRED_LIBRARIES=("socat")
 
 # ========================== Functions ====================================
 
@@ -123,7 +125,8 @@ while [[ $# -gt 0 ]]; do
             handle_directory_cleanup "$COMMANDER_DOWNLOAD_DIR" "Commander directory already exists."
 
             echo "Installing JLink pre-req libraries"
-            sudo apt-get -y install libxrender1 libxcb-render0 libxcb-render-util0 libxcb-shape0 libxcb-randr0 libxcb-xfixes0 libxcb-sync1 libxcb-shm0 libxcb-icccm4 libxcb-keysyms1 libxcb-image0 libxkbcommon0 libxkbcommon-x11-0 libx11-xcb1 libsm6 libice6
+            # sudo apt-get -y install libxrender1 libxcb-render0 libxcb-render-util0 libxcb-shape0 libxcb-randr0 libxcb-xfixes0 libxcb-sync1 libxcb-shm0 libxcb-icccm4 libxcb-keysyms1 libxcb-image0 libxkbcommon0 libxkbcommon-x11-0 libx11-xcb1 libsm6 libice6
+            install_apt_packages "${COMMANDER_REQUIRED_LIBRARIES[@]}"
             sudo apt --fix-broken install
 
             echo "Installing JLink"
@@ -177,8 +180,6 @@ while [[ $# -gt 0 ]]; do
         # https://www.silabs.com/documents/public/application-notes/an1351-using-co-processor-communication_daemon.pdf
             handle_directory_cleanup "$CPCD_DOWNLOAD_DIR" "CPCd directory already exists. [$CPCD_DOWNLOAD_DIR]"
 
-            install_apt_packages "${CPCD_REQUIRED_LIBRARIES[@]}"
-
             echo "Creating the following directories:"
             echo "1. $CPCD_DOWNLOAD_DIR"
             echo "2. $CPCD_BUILD_DIR"
@@ -193,7 +194,7 @@ while [[ $# -gt 0 ]]; do
             unzip "$CPCD_DOWNLOAD_FILE" -d "$CPCD_DOWNLOAD_DIR"
 
             echo "Installing CPCd pre-req libraries as mentined in AN1333"
-            sudo apt-get install libmbedtls-dev 
+            install_apt_packages "${CPCD_REQUIRED_LIBRARIES[@]}"
 
             echo "cmake CPCd and then install in the directory: $CPCD_BUILD_DIR"
             cmake -B "$CPCD_BUILD_DIR" "$CPCD_UNZIPPED_DIR"
@@ -207,8 +208,7 @@ while [[ $# -gt 0 ]]; do
             exit
             ;;
         -socat-o|--socat-open)
-            echo "Trying to install socat again... " 
-            sudo apt-get install socat
+            install_apt_packages "${SOCAT_REQUIRED_LIBRARIES[@]}"
             echo "Socat program starting: cmd:[socat pty,link=/dev/ttyZigbeeNCP pty,link=/tmp/ttyZigbeeNCP]"
             sudo socat pty,link=/dev/ttyZigbeeNCP pty,link=/tmp/ttyZigbeeNCP
             echo "Socat exiting..."
