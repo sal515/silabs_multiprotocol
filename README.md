@@ -7,16 +7,10 @@
     
     No LSB modules are available.
     Distributor ID: Raspbian
-    Description:    Raspbian GNU/Linux 11 (bullseye)
-    Release:        11
-    Codename:       bullseye
+    Description:    Raspbian GNU/Linux 12 (bookworm)
+    Release:        12
+    Codename:       bookworm
     ```
-
-<!-- TODO FIXME Update release version -->
-
-<!-- TODO FIXME Fix up the paths in Setup Script and Test -->
-
-<!-- Add manufacturing library to mg12 -->
 
 - All the firmwares mentioned were created with Silicon Labs GSDKv4.3.2.
 
@@ -36,6 +30,10 @@
 
 ### Natively Compiling the Host Application on RPi - Using setup.sh
 
+- Install Git
+
+  `sudo apt-get -y install git`
+
 - Clone the branch to the RPi
 
   `git clone https://github.com/sal515/silabs_multiprotocol.git`
@@ -48,6 +46,7 @@
   
   `git checkout rssi_test`
 
+  `git status`
 
 - Make the setup script executable
 
@@ -57,7 +56,7 @@
 
   `./setup.sh -commander-s`
 
-- Download and unpack the GSDK 4.3.2 on the Host machine:
+- (Optional) Download and unpack the GSDK 4.3.2 on the Host machine:
   
   `./setup.sh -gsdk-du`
 
@@ -85,7 +84,9 @@
   - RCP firmware is provided in the `src` repository directory
 
 - Flash Bootloader firmware to the DUT (using commander on RPi or from PC before connecting to the Host)
-  - TODO FIXME Bootloader command
+  
+  `./setup.sh -flash-btl`
+  
   - BTL firmware is provided in the `src` repository directory
 
 - Create a (1st) terminal in vscode and execute the following to run `CPCd`:
@@ -104,20 +105,33 @@
 
   `./setup.sh  -z3gateway-rcp-o`
 
-- The logs from the RCP z3gateway mode shoud be automatically stored in the **`run`** directory of the Z3Gateway Project in the PATH=TODOFIXME
+- The logs from the RCP z3gateway mode shoud be automatically stored in the **`run`** directory of the Z3Gateway Project in the PATH=`<path>/silabs_multiprotocol/src/test_lin32_Z3Gateway/run/Z3Gateway_RCP_Log.txt`
 
 - Flash the firmware with MFGLIB library to the Random Packet Sender node:
   - The sender node needs to be connected to the PC - to access the CLI and to send the RANDOM packets using the following commands.
   
   - Initialization of the MFGLIB to send packets
-    - `TODO FIXME`
+
+    ```text
+    plugin mfglib start 0 // Enter manufacturing test mode
+    plugin mfglib set-channel 11 // Set channel to 11
+    plugin mfglib set-power 18 1 // Set power level to 18 dBm
+    plugin mfglib status // Verify radio is in test mode and the parameters that were set
+    in previous steps
+    plugin mfglib send random 12 8 // Send 12 packets with random data of 8 bytes packet length
+    plugin mfglib stop // Exit manufacturing test mode
+    ```
+
   - Commands to send the MFGLIB packets
 
-    - `TODO FIXME` 
+    ```text
+    plugin mfglib send random 12 8 // Send 12 packets with random data of 8 bytes packet length
+    <!-- plugin mfglib stop // Exit manufacturing test mode -->
+    ```
+
     [Section 3.4 AN1162](https://www.silabs.com/documents/public/application-notes/an1162-using-manufacturing-library.pdf)
 
 - Our goal is to observe and compare the RSSI values seen in the Z3Gateway logs with and without transmission in the air.
-  - TODO FIXME
 
 ## NCP RSSI test procedure
 
@@ -140,11 +154,12 @@
 
   - Please note: Typically the port is ttyACM0 sometimes it switches to ttyACM1
 
-- The logs from the NCP Z3Gateway mode shoud be automatically stored in the **`run`** directory of the Z3Gateway Project in the PATH=TODO FIXME
+- The logs from the NCP Z3Gateway mode shoud be automatically stored in the **`run`** directory of the Z3Gateway Project in the PATH=`<path>silabs_multiprotocol/src/test_lin32_Z3Gateway/run/Z3Gateway_RCP_Log.txt`
 
 - Use the sender Node with the MFGLIG library to send random packets in the controlled enviornment
   - Commands to send the MFGLIB packets
-    - `TODO FIXME`
 
-- Our goal is to observe and compare the RSSI values seen in the Z3Gateway logs with and without transmission in the air.
-  - TODO FIXME
+    ```text
+    plugin mfglib send random 12 8 // Send 12 packets with random data of 8 bytes packet length
+    <!-- plugin mfglib stop // Exit manufacturing test mode -->
+    ```
