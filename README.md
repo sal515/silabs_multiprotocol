@@ -15,7 +15,8 @@
 - All the firmwares mentioned were created with Silicon Labs GSDKv4.3.2.
 
 ## Hardware
-
+- Isolation
+  - [ramsey STE3300](https://ramseytest.com/ste3300)
 - DUT:
   - EFR32xG21 2.4 GHz 20 dBm Radio Board (BRD4180B Rev A02)
   
@@ -23,7 +24,7 @@
   - Raspberry Pi
     - Commander & JLink & GSDK enabled using the setup.sh script
 
-- Random MFGLIB packet sending node
+- Tone/Random MFGLIB packet sending node
   - EFR32MG12 2.4 GHz 19 dBm Radio Board (BRD4161A Rev A02)
 
 ## Setting up the Host - RPi
@@ -105,12 +106,14 @@
 
   `./setup.sh  -z3gateway-rcp-o`
 
-  <!-- STOP ENERGY SCAN not working -->
+- Start the energy scan on the Host
+
+  `custom energyScanStart`
 
 - The logs from the RCP z3gateway mode shoud be automatically stored in the **`run`** directory of the Z3Gateway Project in the PATH=`<path>/silabs_multiprotocol/src/test_lin32_Z3Gateway/run/Z3Gateway_RCP_Log.txt`
 
-- Flash the firmware with MFGLIB library to the Random Packet Sender node:
-  - The sender node needs to be connected to the PC - to access the CLI and to send the RANDOM packets using the following commands.
+- Flash the firmware with MFGLIB library to the Tone/Random Packet Sender node:
+  - The sender node needs to be connected to the PC - to access the CLI and to send the Tone/RANDOM packets using the following commands.
   
   - Initialization of the MFGLIB to send packets
 
@@ -120,6 +123,10 @@
     plugin mfglib set-power 18 1 // Set power level to 18 dBm
     plugin mfglib status // Verify radio is in test mode and the parameters that were set
     in previous steps
+
+    plugin mfglib tone start 
+    plugin mfglib tone stop
+
     plugin mfglib send random 12 8 // Send 12 packets with random data of 8 bytes packet length
     plugin mfglib stop // Exit manufacturing test mode
     ```
@@ -156,12 +163,19 @@
 
   - Please note: Typically the port is ttyACM0 sometimes it switches to ttyACM1
 
+- Start the energy scan on the Host
+
+  `custom energyScanStart`
+
 - The logs from the NCP Z3Gateway mode shoud be automatically stored in the **`run`** directory of the Z3Gateway Project in the PATH=`<path>silabs_multiprotocol/src/test_lin32_Z3Gateway/run/Z3Gateway_RCP_Log.txt`
 
-- Use the sender Node with the MFGLIG library to send random packets in the controlled enviornment
+- Use the sender Node with the MFGLIG library to send Tone/random packets in the controlled enviornment
   - Commands to send the MFGLIB packets
 
     ```text
+    plugin mfglib tone start 
+    plugin mfglib tone stop
+    
     plugin mfglib send random 12 8 // Send 12 packets with random data of 8 bytes packet length
     <!-- plugin mfglib stop // Exit manufacturing test mode -->
     ```
