@@ -1,6 +1,6 @@
 # silabs_multiprotocol - # RSSI Test Setup
 
-- This following setup instruction was tested on RPi4b+ Raspbian OS version:
+- This following setup instruction was tested on RPi4b+ Raspbian OS 32bit version:
 
     ```text
     terminal_command: lsb_release -a
@@ -10,15 +10,18 @@
     Description:    Raspbian GNU/Linux 12 (bookworm)
     Release:        12
     Codename:       bookworm
+
+    // NOTE: 32 bit OS is used in this test
     ```
 
 - All the firmwares mentioned were created with Silicon Labs GSDKv4.3.2.
 
 ## Hardware
+
 - Isolation
   - [ramsey STE3300](https://ramseytest.com/ste3300)
 - DUT:
-  - EFR32xG21 2.4 GHz 20 dBm Radio Board (BRD4180B Rev A02)
+  - EFR32xG21 2.4 GHz 20 dBm Radio Board (BRD4180A Rev A02)
   
 - Host Machine
   - Raspberry Pi
@@ -75,7 +78,7 @@
 
 ## RCP RSSI test procedure
 
-- Connect the DUT Board to the Host using USB cable (using UART)
+- Connect only the DUT Board to the Host using USB cable (using UART)
 
 - Flash RCP firmware to the DUT (using commander on RPi)
 

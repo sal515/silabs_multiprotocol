@@ -13,9 +13,9 @@ COMMANDER_CLI_APP_NAME="commander-cli"
 JLINK_32BIT_INSTALLER_NAME="JLink_Linux_V792n_arm.deb"
 JLINK_32BIT_INSTALLER_FILE="$CURRENT_DIR/src/$JLINK_32BIT_INSTALLER_NAME"
 
-NCP_FIRMWARE_FILE="$CURRENT_DIR/src/test_4180b_ncp-uart-hw.hex"
-RCP_FIRMWARE_FILE="$CURRENT_DIR/src/test_4180b_rcp-uart-802154-blehci.hex"
-BTL_FIRMWARE_FILE="$CURRENT_DIR/src/test_4180b_bootloader-uart-xmodem.hex"
+NCP_FIRMWARE_FILE="$CURRENT_DIR/src/test_4180A_ncp-uart-hw_rssi_offset.hex"
+RCP_FIRMWARE_FILE="$CURRENT_DIR/src/test_rcp-uart-802154-blehci_4180A.hex"
+BTL_FIRMWARE_FILE="$CURRENT_DIR/src/test_4180A_bootloader-uart-xmodem.hex"
 
 GSDK_DOWNLOAD_LINK="https://github.com/SiliconLabs/gecko_sdk/releases/download/v4.3.2/gecko-sdk.zip"
 GSDK_DOWNLOAD_DIR=$CURRENT_DIR
