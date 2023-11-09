@@ -1,6 +1,6 @@
 # silabs_multiprotocol - # RSSI Test Setup
 
-- This following setup instruction was tested on RPi4b+ Raspbian OS 32bit version:
+- The following setup instruction was tested on RPi4b+ Raspbian OS 32bit version:
 
     ```text
     terminal_command: lsb_release -a
@@ -11,10 +11,10 @@
     Release:        12
     Codename:       bookworm
 
-    // NOTE: 32 bit OS is used in this test
+    // NOTE: 32-bit OS is used in this test
     ```
 
-- All the firmwares mentioned were created with Silicon Labs GSDKv4.3.2.
+- All the firmware mentioned was created with Silicon Labs GSDKv4.3.2.
 
 ## Hardware
 
@@ -29,6 +29,34 @@
 
 - Tone/Random MFGLIB packet sending node
   - EFR32MG12 2.4 GHz 19 dBm Radio Board (BRD4161A Rev A02)
+
+## Firmware
+
+- RCP:
+  
+  - Changes made to example RCP firmware (Multiprotocol (OpenThread+Zigbee+BLE) - RCP (UART))
+
+    1. Install the component: `CPC SECURITY NONE`
+
+- NCP:
+  
+  - Changes made to example NCP firmware (Zigbee - NCP ncp-uart-hw)
+
+    1. Install the component: `RAIL Utility, RSSI`- set to -11 by default after installation similar to RCP project.
+
+- Cpcd:
+
+  - Followed compiling and installation instructions from [CPCd website](https://github.com/SiliconLabs/cpc-daemon#compiling-cpcd)
+  - Modified the cpcd config file to disable encryption
+
+- Zigbeed:
+
+  - Created project from SSv5 using copy source option
+
+- Z3Gateway:
+
+  - Created project from SSv5 using copy source option
+  - Added energy scanning logic provided in the following sections - used the same logic for both NCP and RCP RSSI test
 
 ## Setting up the Host - RPi
 
@@ -64,11 +92,11 @@
   
   `./setup.sh -gsdk-du`
 
-- Download, unpack and install CPCd on the Host machine:
+- Download, unpack, and install CPCd on the Host machine:
 
     `./setup.sh -cpcd-dui`
 
-- Build Zigbeed project provided in the `src` repository directory
+- Build the Zigbeed project provided in the `src` repository directory
 
   `./setup.sh -zigbeed-b`
 
@@ -84,7 +112,7 @@
 
     `./setup.sh -flash-rcp`
 
-  - Alternatively, flash the RCP firmware to the DUT board before connecting to the host
+  - Alternatively, flash the RCP firmware to the DUT board before connecting to the Host
   - RCP firmware is provided in the `src` repository directory
 
 - Flash Bootloader firmware to the DUT (using commander on RPi or from PC before connecting to the Host)
@@ -143,7 +171,7 @@
 
     [Section 3.4 AN1162](https://www.silabs.com/documents/public/application-notes/an1162-using-manufacturing-library.pdf)
 
-- Our goal is to observe and compare the RSSI values seen in the Z3Gateway logs with and without transmission in the air.
+- Our goal is to observe and compare the RSSI values in the Z3Gateway logs with and without transmission in the air.
 
 ## NCP RSSI test procedure
 
@@ -157,14 +185,14 @@
 
     `./setup.sh -flash-ncp`
 
-  - Alternatively, flash the NCP firmware to the DUT board before connecting to the host
+  - Alternatively, flash the NCP firmware to the DUT board before connecting to the Host
   - NCP firmware is provided in the `src` repository directory
 
 - In one of the terminals on the Host - start the NCP Gateway application using:
 
   `./setup.sh -z3gateway-ncp-o ttyACM0`
 
-  - Please note: Typically the port is ttyACM0 sometimes it switches to ttyACM1
+  - Please note: Typically, the port is ttyACM0; sometimes it switches to ttyACM1
 
 - Start the energy scan on the Host
 
@@ -172,7 +200,7 @@
 
 - The logs from the NCP Z3Gateway mode shoud be automatically stored in the **`run`** directory of the Z3Gateway Project in the PATH=`<path>silabs_multiprotocol/src/test_lin32_Z3Gateway/run/Z3Gateway_RCP_Log.txt`
 
-- Use the sender Node with the MFGLIG library to send Tone/random packets in the controlled enviornment
+- Use the sender Node with the MFGLIG library to send Tone/random packets in the controlled environment
   - Commands to send the MFGLIB packets
 
     ```text
@@ -182,3 +210,109 @@
     plugin mfglib send random 12 8 // Send 12 packets with random data of 8 bytes packet length
     <!-- plugin mfglib stop // Exit manufacturing test mode -->
     ```
+
+## Host Code
+
+```Code
+
+// app.c file
+
+#include "scan-dispatch.h"
+#include "network-creator-config.h"
+
+#define ENERGY_SCAN_RESTART_DELAY (1000U)
+
+static uint32_t energy_scan_restart_count = 0;
+static sl_zigbee_event_t energy_scan_event;
+
+void scanHandlerCrashTest(EmberAfPluginScanDispatchScanResults *results){
+   EmberNetworkScanType scanType
+    = emberAfPluginScanDispatchScanResultsGetScanType(results);
+
+  if (emberAfPluginScanDispatchScanResultsAreFailure(results)) {
+    // If we are here, that means the call to emberStartScan was a failure
+    // in the scan-dispatch plugin (see scan-dispatch.h). So fail.
+    sl_zigbee_app_debug_println("\nScan failure: 0x%02X", results->status);
+  } else { // success
+    if (emberAfPluginScanDispatchScanResultsAreComplete(results)) {
+      sl_zigbee_app_debug_println("Scan complete. Channel: %d. Status: 0x%X\n #%lu - Restart Energy Scan in %lu ms <====",
+                   results->channel,
+                   results->status,
+                   energy_scan_restart_count++,
+                   ENERGY_SCAN_RESTART_DELAY);
+      sl_zigbee_event_set_delay_ms(&energy_scan_event,
+                                   ENERGY_SCAN_RESTART_DELAY);
+    } else { // results
+      if (scanType == EMBER_ACTIVE_SCAN) {
+        sl_zigbee_app_debug_println("Found network!");
+      } else if (scanType == EMBER_ENERGY_SCAN) {
+        sl_zigbee_app_debug_print("Energy scan results: ");
+        sl_zigbee_app_debug_println("Channel: %d. Rssi: %d",
+                     results->channel,
+                     results->rssi);
+      }
+    }
+  }
+}
+
+void startEnergyScan() {
+  // Scan Dispatch Test
+
+  sl_zigbee_app_debug_println("\n===> Scan Start");
+  EmberStatus status;
+  EmberAfPluginScanDispatchScanData data = {
+    .scanType = EMBER_ENERGY_SCAN,
+    .channelMask = EMBER_ALL_802_15_4_CHANNELS_MASK,
+    .duration    = EMBER_AF_PLUGIN_NETWORK_CREATOR_SCAN_DURATION,
+    .handler     = scanHandlerCrashTest
+  };
+
+  status = emberAfPluginScanDispatchScheduleScan(&data);
+  sl_zigbee_app_debug_println("Energy Scan result: 0x%02X", status);
+}
+
+static void energy_scan_event_handler(sl_zigbee_event_t *event)
+{
+  startEnergyScan();
+}
+
+
+void emberAfMainInitCallback(void)
+{
+  // Enable Scan events
+  sl_zigbee_event_init(&energy_scan_event, energy_scan_event_handler);
+}
+
+// ================ Custom CLI ===========================
+// The .slcp file is typically cached - the project should be closed when modifying the .slcp to add the CLI commands
+
+
+/*
+// SLCP File Addition and then generate
+- name: cli_command
+  priority: 0
+  value: {group: custom, name: energyScanStart, handler: energyScanStartCommand}
+*/
+void energyScanStartCommand(sl_cli_command_arg_t *arguments){
+  (void)arguments;
+  sl_zigbee_app_debug_println("\nEnergy Scan Event is executed");
+  sl_zigbee_event_set_active(&energy_scan_event);
+}
+
+/*
+// SLCP File Addition and then generate
+- name: cli_command
+  priority: 0
+  value: {group: custom, name: energyScanStop, handler: energyScanStopCommand}
+*/
+void energyScanStopCommand(sl_cli_command_arg_t *arguments){
+  (void)arguments;
+  sl_zigbee_app_debug_println("\nFunction0 is executed - Inactive all custom events");
+  sl_zigbee_event_set_inactive(&energy_scan_event);
+}
+
+```
+
+## Example screenshot of how to add custom CLI using SLCP file
+
+![Custom CLI using .slcp file](./img/custom_cli_from_slcp.jpg)
