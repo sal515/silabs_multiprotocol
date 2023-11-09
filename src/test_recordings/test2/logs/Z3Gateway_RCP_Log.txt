@@ -1,0 +1,4861 @@
+Reset info: 11 (SOFTWARE)
+
+ezsp ver 0x0C stack type 0x02 stack ver. [7.3.2 GA build 0]
+
+Ezsp Config: set address table size to 0x0002:Success: set
+
+Ezsp Config: set TC addr cache to 0x0002:Success: set
+
+Ezsp Config: set MAC indirect TX timeout to 0x1E00:Success: set
+
+Ezsp Config: set max hops to 0x001E:Success: set
+
+Ezsp Config: set tx power mode to 0x8000:Success: set
+
+Ezsp Config: set supported networks to 0x0001:Success: set
+
+Ezsp Config: set stack profile to 0x0002:Success: set
+
+Ezsp Config: set security level to 0x0005:Success: set
+
+Ezsp Value : set end device keep alive support mode to 0x00000003:Success: set
+
+Ezsp Policy: set binding modify to "allow for valid endpoints & clusters only":Success: set
+
+Ezsp Policy: set message content in msgSent to "return":Success: set
+
+Ezsp Value : set maximum incoming transfer size to 0x00000052:Success: set
+
+Ezsp Value : set maximum outgoing transfer size to 0x00000052:Success: set
+
+Ezsp Config: set binding table size to 0x0002:Success: set
+
+Ezsp Config: set key table size to 0x0004:Success: set
+
+Ezsp Config: set max end device children to 0x0006:Success: set
+
+Ezsp Config: set aps unicast message count to 0x000A:Success: set
+
+Ezsp Config: set broadcast table size to 0x000F:Success: set
+
+Ezsp Config: set neighbor table size to 0x0010:Success: set
+
+Ezsp Config: set end device poll timeout to 0x0008:Success: set
+
+Ezsp Config: set zll group addresses to 0x0000:Success: set
+
+Ezsp Config: set zll rssi threshold to 0xFFD8:Success: set
+
+Ezsp Config: set transient key timeout to 0x012C:Success: set
+
+Ezsp Config: set retry size to 0x0010:Success: set
+
+Ezsp Endpoint 1 added, profile 0x0104, in clusters: 8, out clusters 17
+
+Ezsp Endpoint 242 added, profile 0xA1E0, in clusters: 0, out clusters 1
+
+Starting identifying on endpoint 0x01, identify time is 0 sec
+
+Stopping identifying on endpoint 0x01
+
+No endpoints identifying; stopping identification feedback.
+
+Found 0 files
+
+Z3Gateway>
+
+Z3Gateway>custom energyScanStart
+Z
+3Gateway>Energy Scan Event is executed
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #0 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #1 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #2 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #3 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #4 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #5 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -104
+Energy scan results: Channel: 13. Rssi: -83
+Energy scan results: Channel: 14. Rssi: -81
+Energy scan results: Channel: 15. Rssi: -79
+Energy scan results: Channel: 16. Rssi: -78
+Energy scan results: Channel: 17. Rssi: -77
+Energy scan results: Channel: 18. Rssi: -75
+Energy scan results: Channel: 19. Rssi: -71
+Energy scan results: Channel: 20. Rssi: -6
+Energy scan results: Channel: 21. Rssi: -71
+Energy scan results: Channel: 22. Rssi: -75
+Energy scan results: Channel: 23. Rssi: -77
+Energy scan results: Channel: 24. Rssi: -78
+Energy scan results: Channel: 25. Rssi: -80
+Energy scan results: Channel: 26. Rssi: -83
+Scan complete. Channel: 26. Status: 0x0
+ #6 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -91
+Energy scan results: Channel: 12. Rssi: -88
+Energy scan results: Channel: 13. Rssi: -88
+Energy scan results: Channel: 14. Rssi: -81
+Energy scan results: Channel: 15. Rssi: -79
+Energy scan results: Channel: 16. Rssi: -78
+Energy scan results: Channel: 17. Rssi: -76
+Energy scan results: Channel: 18. Rssi: -75
+Energy scan results: Channel: 19. Rssi: -70
+Energy scan results: Channel: 20. Rssi: -6
+Energy scan results: Channel: 21. Rssi: -71
+Energy scan results: Channel: 22. Rssi: -75
+Energy scan results: Channel: 23. Rssi: -77
+Energy scan results: Channel: 24. Rssi: -78
+Energy scan results: Channel: 25. Rssi: -80
+Energy scan results: Channel: 26. Rssi: -83
+Scan complete. Channel: 26. Status: 0x0
+ #7 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -91
+Energy scan results: Channel: 12. Rssi: -85
+Energy scan results: Channel: 13. Rssi: -83
+Energy scan results: Channel: 14. Rssi: -81
+Energy scan results: Channel: 15. Rssi: -79
+Energy scan results: Channel: 16. Rssi: -78
+Energy scan results: Channel: 17. Rssi: -77
+Energy scan results: Channel: 18. Rssi: -75
+Energy scan results: Channel: 19. Rssi: -71
+Energy scan results: Channel: 20. Rssi: -6
+Energy scan results: Channel: 21. Rssi: -71
+Energy scan results: Channel: 22. Rssi: -76
+Energy scan results: Channel: 23. Rssi: -77
+Energy scan results: Channel: 24. Rssi: -79
+Energy scan results: Channel: 25. Rssi: -80
+Energy scan results: Channel: 26. Rssi: -83
+Scan complete. Channel: 26. Status: 0x0
+ #8 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -91
+Energy scan results: Channel: 12. Rssi: -85
+Energy scan results: Channel: 13. Rssi: -88
+Energy scan results: Channel: 14. Rssi: -81
+Energy scan results: Channel: 15. Rssi: -79
+Energy scan results: Channel: 16. Rssi: -78
+Energy scan results: Channel: 17. Rssi: -76
+Energy scan results: Channel: 18. Rssi: -75
+Energy scan results: Channel: 19. Rssi: -71
+Energy scan results: Channel: 20. Rssi: -7
+Energy scan results: Channel: 21. Rssi: -71
+Energy scan results: Channel: 22. Rssi: -75
+Energy scan results: Channel: 23. Rssi: -77
+Energy scan results: Channel: 24. Rssi: -79
+Energy scan results: Channel: 25. Rssi: -80
+Energy scan results: Channel: 26. Rssi: -83
+Scan complete. Channel: 26. Status: 0x0
+ #9 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -91
+Energy scan results: Channel: 12. Rssi: -88
+Energy scan results: Channel: 13. Rssi: -83
+Energy scan results: Channel: 14. Rssi: -81
+Energy scan results: Channel: 15. Rssi: -79
+Energy scan results: Channel: 16. Rssi: -78
+Energy scan results: Channel: 17. Rssi: -76
+Energy scan results: Channel: 18. Rssi: -75
+Energy scan results: Channel: 19. Rssi: -71
+Energy scan results: Channel: 20. Rssi: -6
+Energy scan results: Channel: 21. Rssi: -71
+Energy scan results: Channel: 22. Rssi: -75
+Energy scan results: Channel: 23. Rssi: -77
+Energy scan results: Channel: 24. Rssi: -78
+Energy scan results: Channel: 25. Rssi: -80
+Energy scan results: Channel: 26. Rssi: -83
+Scan complete. Channel: 26. Status: 0x0
+ #10 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -99
+Energy scan results: Channel: 12. Rssi: -85
+Energy scan results: Channel: 13. Rssi: -83
+Energy scan results: Channel: 14. Rssi: -81
+Energy scan results: Channel: 15. Rssi: -79
+Energy scan results: Channel: 16. Rssi: -78
+Energy scan results: Channel: 17. Rssi: -77
+Energy scan results: Channel: 18. Rssi: -75
+Energy scan results: Channel: 19. Rssi: -71
+Energy scan results: Channel: 20. Rssi: -6
+Energy scan results: Channel: 21. Rssi: -72
+Energy scan results: Channel: 22. Rssi: -75
+Energy scan results: Channel: 23. Rssi: -77
+Energy scan results: Channel: 24. Rssi: -78
+Energy scan results: Channel: 25. Rssi: -80
+Energy scan results: Channel: 26. Rssi: -82
+Scan complete. Channel: 26. Status: 0x0
+ #11 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -91
+Energy scan results: Channel: 12. Rssi: -99
+Energy scan results: Channel: 13. Rssi: -83
+Energy scan results: Channel: 14. Rssi: -81
+Energy scan results: Channel: 15. Rssi: -79
+Energy scan results: Channel: 16. Rssi: -78
+Energy scan results: Channel: 17. Rssi: -76
+Energy scan results: Channel: 18. Rssi: -75
+Energy scan results: Channel: 19. Rssi: -70
+Energy scan results: Channel: 20. Rssi: -6
+Energy scan results: Channel: 21. Rssi: -72
+Energy scan results: Channel: 22. Rssi: -75
+Energy scan results: Channel: 23. Rssi: -77
+Energy scan results: Channel: 24. Rssi: -79
+Energy scan results: Channel: 25. Rssi: -80
+Energy scan results: Channel: 26. Rssi: -83
+Scan complete. Channel: 26. Status: 0x0
+ #12 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -91
+Energy scan results: Channel: 12. Rssi: -85
+Energy scan results: Channel: 13. Rssi: -88
+Energy scan results: Channel: 14. Rssi: -81
+Energy scan results: Channel: 15. Rssi: -79
+Energy scan results: Channel: 16. Rssi: -78
+Energy scan results: Channel: 17. Rssi: -77
+Energy scan results: Channel: 18. Rssi: -75
+Energy scan results: Channel: 19. Rssi: -70
+Energy scan results: Channel: 20. Rssi: -6
+Energy scan results: Channel: 21. Rssi: -72
+Energy scan results: Channel: 22. Rssi: -75
+Energy scan results: Channel: 23. Rssi: -77
+Energy scan results: Channel: 24. Rssi: -78
+Energy scan results: Channel: 25. Rssi: -80
+Energy scan results: Channel: 26. Rssi: -83
+Scan complete. Channel: 26. Status: 0x0
+ #13 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -91
+Energy scan results: Channel: 12. Rssi: -88
+Energy scan results: Channel: 13. Rssi: -88
+Energy scan results: Channel: 14. Rssi: -81
+Energy scan results: Channel: 15. Rssi: -79
+Energy scan results: Channel: 16. Rssi: -78
+Energy scan results: Channel: 17. Rssi: -76
+Energy scan results: Channel: 18. Rssi: -75
+Energy scan results: Channel: 19. Rssi: -71
+Energy scan results: Channel: 20. Rssi: -6
+Energy scan results: Channel: 21. Rssi: -72
+Energy scan results: Channel: 22. Rssi: -75
+Energy scan results: Channel: 23. Rssi: -77
+Energy scan results: Channel: 24. Rssi: -78
+Energy scan results: Channel: 25. Rssi: -80
+Energy scan results: Channel: 26. Rssi: -83
+Scan complete. Channel: 26. Status: 0x0
+ #14 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -91
+Energy scan results: Channel: 12. Rssi: -88
+Energy scan results: Channel: 13. Rssi: -84
+Energy scan results: Channel: 14. Rssi: -81
+Energy scan results: Channel: 15. Rssi: -79
+Energy scan results: Channel: 16. Rssi: -78
+Energy scan results: Channel: 17. Rssi: -76
+Energy scan results: Channel: 18. Rssi: -75
+Energy scan results: Channel: 19. Rssi: -71
+Energy scan results: Channel: 20. Rssi: -6
+Energy scan results: Channel: 21. Rssi: -72
+Energy scan results: Channel: 22. Rssi: -75
+Energy scan results: Channel: 23. Rssi: -77
+Energy scan results: Channel: 24. Rssi: -84
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #15 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #16 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #17 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #18 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -101
+Energy scan results: Channel: 15. Rssi: -88
+Energy scan results: Channel: 16. Rssi: -87
+Energy scan results: Channel: 17. Rssi: -86
+Energy scan results: Channel: 18. Rssi: -83
+Energy scan results: Channel: 19. Rssi: -77
+Energy scan results: Channel: 20. Rssi: -41
+Energy scan results: Channel: 21. Rssi: -78
+Energy scan results: Channel: 22. Rssi: -84
+Energy scan results: Channel: 23. Rssi: -86
+Energy scan results: Channel: 24. Rssi: -88
+Energy scan results: Channel: 25. Rssi: -89
+Energy scan results: Channel: 26. Rssi: -91
+Scan complete. Channel: 26. Status: 0x0
+ #19 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -100
+Energy scan results: Channel: 12. Rssi: -98
+Energy scan results: Channel: 13. Rssi: -94
+Energy scan results: Channel: 14. Rssi: -90
+Energy scan results: Channel: 15. Rssi: -88
+Energy scan results: Channel: 16. Rssi: -87
+Energy scan results: Channel: 17. Rssi: -86
+Energy scan results: Channel: 18. Rssi: -83
+Energy scan results: Channel: 19. Rssi: -77
+Energy scan results: Channel: 20. Rssi: -42
+Energy scan results: Channel: 21. Rssi: -78
+Energy scan results: Channel: 22. Rssi: -84
+Energy scan results: Channel: 23. Rssi: -86
+Energy scan results: Channel: 24. Rssi: -88
+Energy scan results: Channel: 25. Rssi: -89
+Energy scan results: Channel: 26. Rssi: -91
+Scan complete. Channel: 26. Status: 0x0
+ #20 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #21 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -94
+Energy scan results: Channel: 14. Rssi: -90
+Energy scan results: Channel: 15. Rssi: -88
+Energy scan results: Channel: 16. Rssi: -87
+Energy scan results: Channel: 17. Rssi: -86
+Energy scan results: Channel: 18. Rssi: -83
+Energy scan results: Channel: 19. Rssi: -77
+Energy scan results: Channel: 20. Rssi: -41
+Energy scan results: Channel: 21. Rssi: -78
+Energy scan results: Channel: 22. Rssi: -84
+Energy scan results: Channel: 23. Rssi: -86
+Energy scan results: Channel: 24. Rssi: -88
+Energy scan results: Channel: 25. Rssi: -89
+Energy scan results: Channel: 26. Rssi: -91
+Scan complete. Channel: 26. Status: 0x0
+ #22 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -100
+Energy scan results: Channel: 12. Rssi: -98
+Energy scan results: Channel: 13. Rssi: -94
+Energy scan results: Channel: 14. Rssi: -90
+Energy scan results: Channel: 15. Rssi: -88
+Energy scan results: Channel: 16. Rssi: -87
+Energy scan results: Channel: 17. Rssi: -86
+Energy scan results: Channel: 18. Rssi: -83
+Energy scan results: Channel: 19. Rssi: -77
+Energy scan results: Channel: 20. Rssi: -41
+Energy scan results: Channel: 21. Rssi: -78
+Energy scan results: Channel: 22. Rssi: -84
+Energy scan results: Channel: 23. Rssi: -86
+Energy scan results: Channel: 24. Rssi: -88
+Energy scan results: Channel: 25. Rssi: -89
+Energy scan results: Channel: 26. Rssi: -102
+Scan complete. Channel: 26. Status: 0x0
+ #23 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #24 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -100
+Energy scan results: Channel: 12. Rssi: -98
+Energy scan results: Channel: 13. Rssi: -94
+Energy scan results: Channel: 14. Rssi: -90
+Energy scan results: Channel: 15. Rssi: -88
+Energy scan results: Channel: 16. Rssi: -87
+Energy scan results: Channel: 17. Rssi: -86
+Energy scan results: Channel: 18. Rssi: -83
+Energy scan results: Channel: 19. Rssi: -77
+Energy scan results: Channel: 20. Rssi: -41
+Energy scan results: Channel: 21. Rssi: -78
+Energy scan results: Channel: 22. Rssi: -84
+Energy scan results: Channel: 23. Rssi: -86
+Energy scan results: Channel: 24. Rssi: -88
+Energy scan results: Channel: 25. Rssi: -89
+Energy scan results: Channel: 26. Rssi: -91
+Scan complete. Channel: 26. Status: 0x0
+ #25 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -100
+Energy scan results: Channel: 12. Rssi: -98
+Energy scan results: Channel: 13. Rssi: -94
+Energy scan results: Channel: 14. Rssi: -90
+Energy scan results: Channel: 15. Rssi: -88
+Energy scan results: Channel: 16. Rssi: -87
+Energy scan results: Channel: 17. Rssi: -86
+Energy scan results: Channel: 18. Rssi: -83
+Energy scan results: Channel: 19. Rssi: -77
+Energy scan results: Channel: 20. Rssi: -41
+Energy scan results: Channel: 21. Rssi: -78
+Energy scan results: Channel: 22. Rssi: -84
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #26 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -87
+Energy scan results: Channel: 17. Rssi: -86
+Energy scan results: Channel: 18. Rssi: -83
+Energy scan results: Channel: 19. Rssi: -77
+Energy scan results: Channel: 20. Rssi: -41
+Energy scan results: Channel: 21. Rssi: -78
+Energy scan results: Channel: 22. Rssi: -84
+Energy scan results: Channel: 23. Rssi: -86
+Energy scan results: Channel: 24. Rssi: -88
+Energy scan results: Channel: 25. Rssi: -89
+Energy scan results: Channel: 26. Rssi: -91
+Scan complete. Channel: 26. Status: 0x0
+ #27 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -100
+Energy scan results: Channel: 12. Rssi: -98
+Energy scan results: Channel: 13. Rssi: -94
+Energy scan results: Channel: 14. Rssi: -90
+Energy scan results: Channel: 15. Rssi: -88
+Energy scan results: Channel: 16. Rssi: -87
+Energy scan results: Channel: 17. Rssi: -86
+Energy scan results: Channel: 18. Rssi: -83
+Energy scan results: Channel: 19. Rssi: -77
+Energy scan results: Channel: 20. Rssi: -41
+Energy scan results: Channel: 21. Rssi: -78
+Energy scan results: Channel: 22. Rssi: -84
+Energy scan results: Channel: 23. Rssi: -86
+Energy scan results: Channel: 24. Rssi: -88
+Energy scan results: Channel: 25. Rssi: -89
+Energy scan results: Channel: 26. Rssi: -91
+Scan complete. Channel: 26. Status: 0x0
+ #28 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #29 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #30 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #31 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -99
+Energy scan results: Channel: 14. Rssi: -90
+Energy scan results: Channel: 15. Rssi: -88
+Energy scan results: Channel: 16. Rssi: -87
+Energy scan results: Channel: 17. Rssi: -86
+Energy scan results: Channel: 18. Rssi: -83
+Energy scan results: Channel: 19. Rssi: -77
+Energy scan results: Channel: 20. Rssi: -41
+Energy scan results: Channel: 21. Rssi: -78
+Energy scan results: Channel: 22. Rssi: -84
+Energy scan results: Channel: 23. Rssi: -86
+Energy scan results: Channel: 24. Rssi: -88
+Energy scan results: Channel: 25. Rssi: -89
+Energy scan results: Channel: 26. Rssi: -91
+Scan complete. Channel: 26. Status: 0x0
+ #32 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -100
+Energy scan results: Channel: 12. Rssi: -98
+Energy scan results: Channel: 13. Rssi: -94
+Energy scan results: Channel: 14. Rssi: -90
+Energy scan results: Channel: 15. Rssi: -88
+Energy scan results: Channel: 16. Rssi: -87
+Energy scan results: Channel: 17. Rssi: -86
+Energy scan results: Channel: 18. Rssi: -83
+Energy scan results: Channel: 19. Rssi: -77
+Energy scan results: Channel: 20. Rssi: -41
+Energy scan results: Channel: 21. Rssi: -78
+Energy scan results: Channel: 22. Rssi: -84
+Energy scan results: Channel: 23. Rssi: -86
+Energy scan results: Channel: 24. Rssi: -88
+Energy scan results: Channel: 25. Rssi: -89
+Energy scan results: Channel: 26. Rssi: -94
+Scan complete. Channel: 26. Status: 0x0
+ #33 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #34 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #35 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #36 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -77
+Energy scan results: Channel: 18. Rssi: -73
+Energy scan results: Channel: 19. Rssi: -65
+Energy scan results: Channel: 20. Rssi: -13
+Energy scan results: Channel: 21. Rssi: -66
+Energy scan results: Channel: 22. Rssi: -75
+Energy scan results: Channel: 23. Rssi: -78
+Energy scan results: Channel: 24. Rssi: -80
+Energy scan results: Channel: 25. Rssi: -81
+Energy scan results: Channel: 26. Rssi: -84
+Scan complete. Channel: 26. Status: 0x0
+ #37 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -99
+Energy scan results: Channel: 12. Rssi: -96
+Energy scan results: Channel: 13. Rssi: -88
+Energy scan results: Channel: 14. Rssi: -83
+Energy scan results: Channel: 15. Rssi: -81
+Energy scan results: Channel: 16. Rssi: -79
+Energy scan results: Channel: 17. Rssi: -77
+Energy scan results: Channel: 18. Rssi: -73
+Energy scan results: Channel: 19. Rssi: -65
+Energy scan results: Channel: 20. Rssi: -13
+Energy scan results: Channel: 21. Rssi: -67
+Energy scan results: Channel: 22. Rssi: -75
+Energy scan results: Channel: 23. Rssi: -78
+Energy scan results: Channel: 24. Rssi: -80
+Energy scan results: Channel: 25. Rssi: -82
+Energy scan results: Channel: 26. Rssi: -84
+Scan complete. Channel: 26. Status: 0x0
+ #38 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -99
+Energy scan results: Channel: 12. Rssi: -97
+Energy scan results: Channel: 13. Rssi: -88
+Energy scan results: Channel: 14. Rssi: -83
+Energy scan results: Channel: 15. Rssi: -81
+Energy scan results: Channel: 16. Rssi: -79
+Energy scan results: Channel: 17. Rssi: -77
+Energy scan results: Channel: 18. Rssi: -73
+Energy scan results: Channel: 19. Rssi: -65
+Energy scan results: Channel: 20. Rssi: -13
+Energy scan results: Channel: 21. Rssi: -67
+Energy scan results: Channel: 22. Rssi: -75
+Energy scan results: Channel: 23. Rssi: -78
+Energy scan results: Channel: 24. Rssi: -80
+Energy scan results: Channel: 25. Rssi: -82
+Energy scan results: Channel: 26. Rssi: -84
+Scan complete. Channel: 26. Status: 0x0
+ #39 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -99
+Energy scan results: Channel: 12. Rssi: -96
+Energy scan results: Channel: 13. Rssi: -88
+Energy scan results: Channel: 14. Rssi: -83
+Energy scan results: Channel: 15. Rssi: -81
+Energy scan results: Channel: 16. Rssi: -79
+Energy scan results: Channel: 17. Rssi: -77
+Energy scan results: Channel: 18. Rssi: -73
+Energy scan results: Channel: 19. Rssi: -65
+Energy scan results: Channel: 20. Rssi: -13
+Energy scan results: Channel: 21. Rssi: -67
+Energy scan results: Channel: 22. Rssi: -75
+Energy scan results: Channel: 23. Rssi: -78
+Energy scan results: Channel: 24. Rssi: -80
+Energy scan results: Channel: 25. Rssi: -82
+Energy scan results: Channel: 26. Rssi: -84
+Scan complete. Channel: 26. Status: 0x0
+ #40 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -99
+Energy scan results: Channel: 12. Rssi: -96
+Energy scan results: Channel: 13. Rssi: -89
+Energy scan results: Channel: 14. Rssi: -83
+Energy scan results: Channel: 15. Rssi: -81
+Energy scan results: Channel: 16. Rssi: -79
+Energy scan results: Channel: 17. Rssi: -77
+Energy scan results: Channel: 18. Rssi: -73
+Energy scan results: Channel: 19. Rssi: -65
+Energy scan results: Channel: 20. Rssi: -13
+Energy scan results: Channel: 21. Rssi: -67
+Energy scan results: Channel: 22. Rssi: -75
+Energy scan results: Channel: 23. Rssi: -78
+Energy scan results: Channel: 24. Rssi: -80
+Energy scan results: Channel: 25. Rssi: -82
+Energy scan results: Channel: 26. Rssi: -84
+Scan complete. Channel: 26. Status: 0x0
+ #41 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -99
+Energy scan results: Channel: 12. Rssi: -96
+Energy scan results: Channel: 13. Rssi: -88
+Energy scan results: Channel: 14. Rssi: -83
+Energy scan results: Channel: 15. Rssi: -81
+Energy scan results: Channel: 16. Rssi: -86
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #42 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #43 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -104
+Energy scan results: Channel: 13. Rssi: -88
+Energy scan results: Channel: 14. Rssi: -83
+Energy scan results: Channel: 15. Rssi: -81
+Energy scan results: Channel: 16. Rssi: -79
+Energy scan results: Channel: 17. Rssi: -77
+Energy scan results: Channel: 18. Rssi: -73
+Energy scan results: Channel: 19. Rssi: -65
+Energy scan results: Channel: 20. Rssi: -13
+Energy scan results: Channel: 21. Rssi: -67
+Energy scan results: Channel: 22. Rssi: -75
+Energy scan results: Channel: 23. Rssi: -78
+Energy scan results: Channel: 24. Rssi: -80
+Energy scan results: Channel: 25. Rssi: -82
+Energy scan results: Channel: 26. Rssi: -84
+Scan complete. Channel: 26. Status: 0x0
+ #44 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -99
+Energy scan results: Channel: 12. Rssi: -96
+Energy scan results: Channel: 13. Rssi: -88
+Energy scan results: Channel: 14. Rssi: -83
+Energy scan results: Channel: 15. Rssi: -81
+Energy scan results: Channel: 16. Rssi: -79
+Energy scan results: Channel: 17. Rssi: -77
+Energy scan results: Channel: 18. Rssi: -73
+Energy scan results: Channel: 19. Rssi: -65
+Energy scan results: Channel: 20. Rssi: -13
+Energy scan results: Channel: 21. Rssi: -67
+Energy scan results: Channel: 22. Rssi: -75
+Energy scan results: Channel: 23. Rssi: -78
+Energy scan results: Channel: 24. Rssi: -80
+Energy scan results: Channel: 25. Rssi: -82
+Energy scan results: Channel: 26. Rssi: -84
+Scan complete. Channel: 26. Status: 0x0
+ #45 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -99
+Energy scan results: Channel: 12. Rssi: -96
+Energy scan results: Channel: 13. Rssi: -89
+Energy scan results: Channel: 14. Rssi: -83
+Energy scan results: Channel: 15. Rssi: -81
+Energy scan results: Channel: 16. Rssi: -79
+Energy scan results: Channel: 17. Rssi: -77
+Energy scan results: Channel: 18. Rssi: -73
+Energy scan results: Channel: 19. Rssi: -65
+Energy scan results: Channel: 20. Rssi: -13
+Energy scan results: Channel: 21. Rssi: -67
+Energy scan results: Channel: 22. Rssi: -75
+Energy scan results: Channel: 23. Rssi: -78
+Energy scan results: Channel: 24. Rssi: -80
+Energy scan results: Channel: 25. Rssi: -82
+Energy scan results: Channel: 26. Rssi: -84
+Scan complete. Channel: 26. Status: 0x0
+ #46 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -99
+Energy scan results: Channel: 12. Rssi: -96
+Energy scan results: Channel: 13. Rssi: -88
+Energy scan results: Channel: 14. Rssi: -83
+Energy scan results: Channel: 15. Rssi: -81
+Energy scan results: Channel: 16. Rssi: -79
+Energy scan results: Channel: 17. Rssi: -77
+Energy scan results: Channel: 18. Rssi: -73
+Energy scan results: Channel: 19. Rssi: -65
+Energy scan results: Channel: 20. Rssi: -13
+Energy scan results: Channel: 21. Rssi: -67
+Energy scan results: Channel: 22. Rssi: -75
+Energy scan results: Channel: 23. Rssi: -78
+Energy scan results: Channel: 24. Rssi: -80
+Energy scan results: Channel: 25. Rssi: -82
+Energy scan results: Channel: 26. Rssi: -84
+Scan complete. Channel: 26. Status: 0x0
+ #47 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -99
+Energy scan results: Channel: 12. Rssi: -96
+Energy scan results: Channel: 13. Rssi: -89
+Energy scan results: Channel: 14. Rssi: -83
+Energy scan results: Channel: 15. Rssi: -81
+Energy scan results: Channel: 16. Rssi: -79
+Energy scan results: Channel: 17. Rssi: -77
+Energy scan results: Channel: 18. Rssi: -73
+Energy scan results: Channel: 19. Rssi: -65
+Energy scan results: Channel: 20. Rssi: -13
+Energy scan results: Channel: 21. Rssi: -67
+Energy scan results: Channel: 22. Rssi: -75
+Energy scan results: Channel: 23. Rssi: -78
+Energy scan results: Channel: 24. Rssi: -80
+Energy scan results: Channel: 25. Rssi: -82
+Energy scan results: Channel: 26. Rssi: -84
+Scan complete. Channel: 26. Status: 0x0
+ #48 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -99
+Energy scan results: Channel: 12. Rssi: -100
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #49 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -94
+Energy scan results: Channel: 14. Rssi: -83
+Energy scan results: Channel: 15. Rssi: -81
+Energy scan results: Channel: 16. Rssi: -79
+Energy scan results: Channel: 17. Rssi: -77
+Energy scan results: Channel: 18. Rssi: -73
+Energy scan results: Channel: 19. Rssi: -65
+Energy scan results: Channel: 20. Rssi: -13
+Energy scan results: Channel: 21. Rssi: -67
+Energy scan results: Channel: 22. Rssi: -75
+Energy scan results: Channel: 23. Rssi: -78
+Energy scan results: Channel: 24. Rssi: -80
+Energy scan results: Channel: 25. Rssi: -82
+Energy scan results: Channel: 26. Rssi: -84
+Scan complete. Channel: 26. Status: 0x0
+ #50 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -99
+Energy scan results: Channel: 12. Rssi: -96
+Energy scan results: Channel: 13. Rssi: -88
+Energy scan results: Channel: 14. Rssi: -83
+Energy scan results: Channel: 15. Rssi: -81
+Energy scan results: Channel: 16. Rssi: -79
+Energy scan results: Channel: 17. Rssi: -77
+Energy scan results: Channel: 18. Rssi: -73
+Energy scan results: Channel: 19. Rssi: -65
+Energy scan results: Channel: 20. Rssi: -13
+Energy scan results: Channel: 21. Rssi: -67
+Energy scan results: Channel: 22. Rssi: -75
+Energy scan results: Channel: 23. Rssi: -78
+Energy scan results: Channel: 24. Rssi: -80
+Energy scan results: Channel: 25. Rssi: -82
+Energy scan results: Channel: 26. Rssi: -84
+Scan complete. Channel: 26. Status: 0x0
+ #51 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -99
+Energy scan results: Channel: 12. Rssi: -96
+Energy scan results: Channel: 13. Rssi: -89
+Energy scan results: Channel: 14. Rssi: -83
+Energy scan results: Channel: 15. Rssi: -81
+Energy scan results: Channel: 16. Rssi: -79
+Energy scan results: Channel: 17. Rssi: -77
+Energy scan results: Channel: 18. Rssi: -73
+Energy scan results: Channel: 19. Rssi: -65
+Energy scan results: Channel: 20. Rssi: -13
+Energy scan results: Channel: 21. Rssi: -67
+Energy scan results: Channel: 22. Rssi: -75
+Energy scan results: Channel: 23. Rssi: -78
+Energy scan results: Channel: 24. Rssi: -80
+Energy scan results: Channel: 25. Rssi: -82
+Energy scan results: Channel: 26. Rssi: -84
+Scan complete. Channel: 26. Status: 0x0
+ #52 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -99
+Energy scan results: Channel: 12. Rssi: -96
+Energy scan results: Channel: 13. Rssi: -88
+Energy scan results: Channel: 14. Rssi: -83
+Energy scan results: Channel: 15. Rssi: -81
+Energy scan results: Channel: 16. Rssi: -79
+Energy scan results: Channel: 17. Rssi: -77
+Energy scan results: Channel: 18. Rssi: -73
+Energy scan results: Channel: 19. Rssi: -65
+Energy scan results: Channel: 20. Rssi: -13
+Energy scan results: Channel: 21. Rssi: -67
+Energy scan results: Channel: 22. Rssi: -75
+Energy scan results: Channel: 23. Rssi: -78
+Energy scan results: Channel: 24. Rssi: -80
+Energy scan results: Channel: 25. Rssi: -82
+Energy scan results: Channel: 26. Rssi: -84
+Scan complete. Channel: 26. Status: 0x0
+ #53 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -99
+Energy scan results: Channel: 12. Rssi: -96
+Energy scan results: Channel: 13. Rssi: -88
+Energy scan results: Channel: 14. Rssi: -83
+Energy scan results: Channel: 15. Rssi: -81
+Energy scan results: Channel: 16. Rssi: -79
+Energy scan results: Channel: 17. Rssi: -77
+Energy scan results: Channel: 18. Rssi: -73
+Energy scan results: Channel: 19. Rssi: -65
+Energy scan results: Channel: 20. Rssi: -13
+Energy scan results: Channel: 21. Rssi: -67
+Energy scan results: Channel: 22. Rssi: -75
+Energy scan results: Channel: 23. Rssi: -78
+Energy scan results: Channel: 24. Rssi: -80
+Energy scan results: Channel: 25. Rssi: -82
+Energy scan results: Channel: 26. Rssi: -84
+Scan complete. Channel: 26. Status: 0x0
+ #54 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #55 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #56 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #57 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #58 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #59 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #60 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #61 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -85
+Energy scan results: Channel: 16. Rssi: -79
+Energy scan results: Channel: 17. Rssi: -77
+Energy scan results: Channel: 18. Rssi: -73
+Energy scan results: Channel: 19. Rssi: -65
+Energy scan results: Channel: 20. Rssi: -13
+Energy scan results: Channel: 21. Rssi: -67
+Energy scan results: Channel: 22. Rssi: -75
+Energy scan results: Channel: 23. Rssi: -78
+Energy scan results: Channel: 24. Rssi: -80
+Energy scan results: Channel: 25. Rssi: -81
+Energy scan results: Channel: 26. Rssi: -84
+Scan complete. Channel: 26. Status: 0x0
+ #62 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -99
+Energy scan results: Channel: 12. Rssi: -95
+Energy scan results: Channel: 13. Rssi: -89
+Energy scan results: Channel: 14. Rssi: -83
+Energy scan results: Channel: 15. Rssi: -81
+Energy scan results: Channel: 16. Rssi: -79
+Energy scan results: Channel: 17. Rssi: -77
+Energy scan results: Channel: 18. Rssi: -73
+Energy scan results: Channel: 19. Rssi: -65
+Energy scan results: Channel: 20. Rssi: -13
+Energy scan results: Channel: 21. Rssi: -67
+Energy scan results: Channel: 22. Rssi: -75
+Energy scan results: Channel: 23. Rssi: -78
+Energy scan results: Channel: 24. Rssi: -80
+Energy scan results: Channel: 25. Rssi: -82
+Energy scan results: Channel: 26. Rssi: -84
+Scan complete. Channel: 26. Status: 0x0
+ #63 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -99
+Energy scan results: Channel: 12. Rssi: -96
+Energy scan results: Channel: 13. Rssi: -88
+Energy scan results: Channel: 14. Rssi: -83
+Energy scan results: Channel: 15. Rssi: -81
+Energy scan results: Channel: 16. Rssi: -79
+Energy scan results: Channel: 17. Rssi: -77
+Energy scan results: Channel: 18. Rssi: -73
+Energy scan results: Channel: 19. Rssi: -65
+Energy scan results: Channel: 20. Rssi: -13
+Energy scan results: Channel: 21. Rssi: -67
+Energy scan results: Channel: 22. Rssi: -75
+Energy scan results: Channel: 23. Rssi: -78
+Energy scan results: Channel: 24. Rssi: -80
+Energy scan results: Channel: 25. Rssi: -82
+Energy scan results: Channel: 26. Rssi: -84
+Scan complete. Channel: 26. Status: 0x0
+ #64 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -99
+Energy scan results: Channel: 12. Rssi: -96
+Energy scan results: Channel: 13. Rssi: -89
+Energy scan results: Channel: 14. Rssi: -83
+Energy scan results: Channel: 15. Rssi: -81
+Energy scan results: Channel: 16. Rssi: -79
+Energy scan results: Channel: 17. Rssi: -77
+Energy scan results: Channel: 18. Rssi: -73
+Energy scan results: Channel: 19. Rssi: -65
+Energy scan results: Channel: 20. Rssi: -13
+Energy scan results: Channel: 21. Rssi: -67
+Energy scan results: Channel: 22. Rssi: -75
+Energy scan results: Channel: 23. Rssi: -78
+Energy scan results: Channel: 24. Rssi: -80
+Energy scan results: Channel: 25. Rssi: -81
+Energy scan results: Channel: 26. Rssi: -84
+Scan complete. Channel: 26. Status: 0x0
+ #65 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -99
+Energy scan results: Channel: 12. Rssi: -96
+Energy scan results: Channel: 13. Rssi: -89
+Energy scan results: Channel: 14. Rssi: -83
+Energy scan results: Channel: 15. Rssi: -81
+Energy scan results: Channel: 16. Rssi: -79
+Energy scan results: Channel: 17. Rssi: -77
+Energy scan results: Channel: 18. Rssi: -73
+Energy scan results: Channel: 19. Rssi: -65
+Energy scan results: Channel: 20. Rssi: -13
+Energy scan results: Channel: 21. Rssi: -67
+Energy scan results: Channel: 22. Rssi: -75
+Energy scan results: Channel: 23. Rssi: -78
+Energy scan results: Channel: 24. Rssi: -80
+Energy scan results: Channel: 25. Rssi: -82
+Energy scan results: Channel: 26. Rssi: -84
+Scan complete. Channel: 26. Status: 0x0
+ #66 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -99
+Energy scan results: Channel: 12. Rssi: -96
+Energy scan results: Channel: 13. Rssi: -88
+Energy scan results: Channel: 14. Rssi: -83
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #67 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #68 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #69 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #70 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #71 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -80
+Energy scan results: Channel: 19. Rssi: -65
+Energy scan results: Channel: 20. Rssi: -13
+Energy scan results: Channel: 21. Rssi: -67
+Energy scan results: Channel: 22. Rssi: -75
+Energy scan results: Channel: 23. Rssi: -78
+Energy scan results: Channel: 24. Rssi: -80
+Energy scan results: Channel: 25. Rssi: -82
+Energy scan results: Channel: 26. Rssi: -84
+Scan complete. Channel: 26. Status: 0x0
+ #72 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -99
+Energy scan results: Channel: 12. Rssi: -96
+Energy scan results: Channel: 13. Rssi: -88
+Energy scan results: Channel: 14. Rssi: -83
+Energy scan results: Channel: 15. Rssi: -81
+Energy scan results: Channel: 16. Rssi: -79
+Energy scan results: Channel: 17. Rssi: -77
+Energy scan results: Channel: 18. Rssi: -73
+Energy scan results: Channel: 19. Rssi: -65
+Energy scan results: Channel: 20. Rssi: -13
+Energy scan results: Channel: 21. Rssi: -67
+Energy scan results: Channel: 22. Rssi: -75
+Energy scan results: Channel: 23. Rssi: -78
+Energy scan results: Channel: 24. Rssi: -80
+Energy scan results: Channel: 25. Rssi: -82
+Energy scan results: Channel: 26. Rssi: -84
+Scan complete. Channel: 26. Status: 0x0
+ #73 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -99
+Energy scan results: Channel: 12. Rssi: -96
+Energy scan results: Channel: 13. Rssi: -88
+Energy scan results: Channel: 14. Rssi: -83
+Energy scan results: Channel: 15. Rssi: -81
+Energy scan results: Channel: 16. Rssi: -79
+Energy scan results: Channel: 17. Rssi: -77
+Energy scan results: Channel: 18. Rssi: -73
+Energy scan results: Channel: 19. Rssi: -65
+Energy scan results: Channel: 20. Rssi: -13
+Energy scan results: Channel: 21. Rssi: -67
+Energy scan results: Channel: 22. Rssi: -75
+Energy scan results: Channel: 23. Rssi: -78
+Energy scan results: Channel: 24. Rssi: -80
+Energy scan results: Channel: 25. Rssi: -82
+Energy scan results: Channel: 26. Rssi: -84
+Scan complete. Channel: 26. Status: 0x0
+ #74 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -99
+Energy scan results: Channel: 12. Rssi: -96
+Energy scan results: Channel: 13. Rssi: -89
+Energy scan results: Channel: 14. Rssi: -83
+Energy scan results: Channel: 15. Rssi: -81
+Energy scan results: Channel: 16. Rssi: -79
+Energy scan results: Channel: 17. Rssi: -77
+Energy scan results: Channel: 18. Rssi: -73
+Energy scan results: Channel: 19. Rssi: -65
+Energy scan results: Channel: 20. Rssi: -13
+Energy scan results: Channel: 21. Rssi: -67
+Energy scan results: Channel: 22. Rssi: -75
+Energy scan results: Channel: 23. Rssi: -78
+Energy scan results: Channel: 24. Rssi: -80
+Energy scan results: Channel: 25. Rssi: -81
+Energy scan results: Channel: 26. Rssi: -84
+Scan complete. Channel: 26. Status: 0x0
+ #75 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -99
+Energy scan results: Channel: 12. Rssi: -96
+Energy scan results: Channel: 13. Rssi: -88
+Energy scan results: Channel: 14. Rssi: -83
+Energy scan results: Channel: 15. Rssi: -81
+Energy scan results: Channel: 16. Rssi: -79
+Energy scan results: Channel: 17. Rssi: -77
+Energy scan results: Channel: 18. Rssi: -73
+Energy scan results: Channel: 19. Rssi: -65
+Energy scan results: Channel: 20. Rssi: -13
+Energy scan results: Channel: 21. Rssi: -67
+Energy scan results: Channel: 22. Rssi: -75
+Energy scan results: Channel: 23. Rssi: -78
+Energy scan results: Channel: 24. Rssi: -80
+Energy scan results: Channel: 25. Rssi: -82
+Energy scan results: Channel: 26. Rssi: -84
+Scan complete. Channel: 26. Status: 0x0
+ #76 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -99
+Energy scan results: Channel: 12. Rssi: -96
+Energy scan results: Channel: 13. Rssi: -89
+Energy scan results: Channel: 14. Rssi: -83
+Energy scan results: Channel: 15. Rssi: -81
+Energy scan results: Channel: 16. Rssi: -79
+Energy scan results: Channel: 17. Rssi: -77
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #77 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #78 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #79 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #80 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #81 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #82 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #83 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #84 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #85 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #86 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #87 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #88 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #89 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #90 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #91 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #92 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #93 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #94 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #95 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #96 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #97 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #98 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #99 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #100 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #101 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #102 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #103 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #104 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #105 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #106 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #107 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #108 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #109 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #110 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #111 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #112 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #113 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #114 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #115 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #116 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #117 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #118 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #119 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #120 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #121 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #122 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #123 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #124 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #125 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #126 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #127 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #128 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #129 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #130 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #131 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #132 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #133 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #134 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #135 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #136 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #137 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #138 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #139 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #140 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #141 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #142 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #143 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #144 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #145 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #146 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #147 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #148 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #149 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #150 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -102
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #151 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -102
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #152 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -102
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #153 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -102
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #154 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -102
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #155 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -102
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #156 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -102
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #157 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -81
+Energy scan results: Channel: 17. Rssi: -77
+Energy scan results: Channel: 18. Rssi: -73
+Energy scan results: Channel: 19. Rssi: -65
+Energy scan results: Channel: 20. Rssi: -12
+Energy scan results: Channel: 21. Rssi: -66
+Energy scan results: Channel: 22. Rssi: -75
+Energy scan results: Channel: 23. Rssi: -78
+Energy scan results: Channel: 24. Rssi: -80
+Energy scan results: Channel: 25. Rssi: -81
+Energy scan results: Channel: 26. Rssi: -84
+Scan complete. Channel: 26. Status: 0x0
+ #158 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -99
+Energy scan results: Channel: 12. Rssi: -96
+Energy scan results: Channel: 13. Rssi: -88
+Energy scan results: Channel: 14. Rssi: -83
+Energy scan results: Channel: 15. Rssi: -81
+Energy scan results: Channel: 16. Rssi: -79
+Energy scan results: Channel: 17. Rssi: -77
+Energy scan results: Channel: 18. Rssi: -73
+Energy scan results: Channel: 19. Rssi: -65
+Energy scan results: Channel: 20. Rssi: -13
+Energy scan results: Channel: 21. Rssi: -67
+Energy scan results: Channel: 22. Rssi: -75
+Energy scan results: Channel: 23. Rssi: -78
+Energy scan results: Channel: 24. Rssi: -80
+Energy scan results: Channel: 25. Rssi: -81
+Energy scan results: Channel: 26. Rssi: -84
+Scan complete. Channel: 26. Status: 0x0
+ #159 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -99
+Energy scan results: Channel: 12. Rssi: -96
+Energy scan results: Channel: 13. Rssi: -88
+Energy scan results: Channel: 14. Rssi: -83
+Energy scan results: Channel: 15. Rssi: -81
+Energy scan results: Channel: 16. Rssi: -79
+Energy scan results: Channel: 17. Rssi: -77
+Energy scan results: Channel: 18. Rssi: -73
+Energy scan results: Channel: 19. Rssi: -65
+Energy scan results: Channel: 20. Rssi: -13
+Energy scan results: Channel: 21. Rssi: -67
+Energy scan results: Channel: 22. Rssi: -75
+Energy scan results: Channel: 23. Rssi: -78
+Energy scan results: Channel: 24. Rssi: -80
+Energy scan results: Channel: 25. Rssi: -82
+Energy scan results: Channel: 26. Rssi: -84
+Scan complete. Channel: 26. Status: 0x0
+ #160 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -99
+Energy scan results: Channel: 12. Rssi: -96
+Energy scan results: Channel: 13. Rssi: -88
+Energy scan results: Channel: 14. Rssi: -83
+Energy scan results: Channel: 15. Rssi: -81
+Energy scan results: Channel: 16. Rssi: -79
+Energy scan results: Channel: 17. Rssi: -77
+Energy scan results: Channel: 18. Rssi: -73
+Energy scan results: Channel: 19. Rssi: -65
+Energy scan results: Channel: 20. Rssi: -13
+Energy scan results: Channel: 21. Rssi: -67
+Energy scan results: Channel: 22. Rssi: -75
+Energy scan results: Channel: 23. Rssi: -78
+Energy scan results: Channel: 24. Rssi: -80
+Energy scan results: Channel: 25. Rssi: -82
+Energy scan results: Channel: 26. Rssi: -84
+Scan complete. Channel: 26. Status: 0x0
+ #161 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -99
+Energy scan results: Channel: 12. Rssi: -96
+Energy scan results: Channel: 13. Rssi: -89
+Energy scan results: Channel: 14. Rssi: -83
+Energy scan results: Channel: 15. Rssi: -81
+Energy scan results: Channel: 16. Rssi: -79
+Energy scan results: Channel: 17. Rssi: -77
+Energy scan results: Channel: 18. Rssi: -73
+Energy scan results: Channel: 19. Rssi: -65
+Energy scan results: Channel: 20. Rssi: -13
+Energy scan results: Channel: 21. Rssi: -67
+Energy scan results: Channel: 22. Rssi: -75
+Energy scan results: Channel: 23. Rssi: -78
+Energy scan results: Channel: 24. Rssi: -80
+Energy scan results: Channel: 25. Rssi: -81
+Energy scan results: Channel: 26. Rssi: -84
+Scan complete. Channel: 26. Status: 0x0
+ #162 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -99
+Energy scan results: Channel: 12. Rssi: -96
+Energy scan results: Channel: 13. Rssi: -88
+Energy scan results: Channel: 14. Rssi: -83
+Energy scan results: Channel: 15. Rssi: -82
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #163 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #164 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #165 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #166 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #167 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #168 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #169 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #170 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #171 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #172 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #173 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #174 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #175 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #176 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #177 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #178 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #179 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #180 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #181 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #182 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #183 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #184 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #185 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #186 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #187 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #188 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #189 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #190 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #191 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #192 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #193 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #194 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #195 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #196 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #197 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #198 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #199 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #200 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #201 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #202 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #203 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #204 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #205 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #206 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #207 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #208 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #209 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #210 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #211 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #212 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #213 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #214 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #215 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #216 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #217 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #218 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #219 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #220 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #221 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #222 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #223 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #224 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #225 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #226 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104
+Energy scan results: Channel: 12. Rssi: -105
+Energy scan results: Channel: 13. Rssi: -106
+Energy scan results: Channel: 14. Rssi: -106
+Energy scan results: Channel: 15. Rssi: -106
+Energy scan results: Channel: 16. Rssi: -106
+Energy scan results: Channel: 17. Rssi: -106
+Energy scan results: Channel: 18. Rssi: -106
+Energy scan results: Channel: 19. Rssi: -106
+Energy scan results: Channel: 20. Rssi: -106
+Energy scan results: Channel: 21. Rssi: -106
+Energy scan results: Channel: 22. Rssi: -106
+Energy scan results: Channel: 23. Rssi: -106
+Energy scan results: Channel: 24. Rssi: -106
+Energy scan results: Channel: 25. Rssi: -106
+Energy scan results: Channel: 26. Rssi: -106
+Scan complete. Channel: 26. Status: 0x0
+ #227 - Restart Energy Scan in 1000 ms <====
+
+===> Scan Start
+Energy Scan result: 0x00
+Energy scan results: Channel: 11. Rssi: -104

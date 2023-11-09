@@ -150,22 +150,27 @@
 
     ```text
     plugin mfglib start 0 // Enter manufacturing test mode
-    plugin mfglib set-channel 11 // Set channel to 11
-    plugin mfglib set-power 18 1 // Set power level to 18 dBm
+    plugin mfglib set-channel 20 // Set channel to 20
+    plugin mfglib set-power 20 1 // Set power level to 20 dBm
     plugin mfglib status // Verify radio is in test mode and the parameters that were set
     in previous steps
 
     plugin mfglib tone start 
     plugin mfglib tone stop
 
-    plugin mfglib send random 12 8 // Send 12 packets with random data of 8 bytes packet length
-    plugin mfglib stop // Exit manufacturing test mode
     ```
 
   - Commands to send the MFGLIB packets
 
     ```text
-    plugin mfglib send random 12 8 // Send 12 packets with random data of 8 bytes packet length
+    plugin mfglib send random 10000 8 // Send 10000 packets with random data of 8 bytes packet length
+    
+    // Delay of around 5s  
+    
+    plugin mfglib send random 5000 125 // Send 5000 packets with random data of 125 bytes packet length
+
+    plugin mfglib stop // Exit manufacturing test mode
+
     <!-- plugin mfglib stop // Exit manufacturing test mode -->
     ```
 
@@ -198,7 +203,7 @@
 
   `custom energyScanStart`
 
-- The logs from the NCP Z3Gateway mode shoud be automatically stored in the **`run`** directory of the Z3Gateway Project in the PATH=`<path>silabs_multiprotocol/src/test_lin32_Z3Gateway/run/Z3Gateway_RCP_Log.txt`
+- The logs from the NCP Z3Gateway mode shoud be automatically stored in the **`run`** directory of the Z3Gateway Project in the PATH=`<path>silabs_multiprotocol/src/test_lin32_Z3Gateway/run/Z3Gateway_NCP_Log.txt`
 
 - Use the sender Node with the MFGLIG library to send Tone/random packets in the controlled environment
   - Commands to send the MFGLIB packets
@@ -207,7 +212,10 @@
     plugin mfglib tone start 
     plugin mfglib tone stop
     
-    plugin mfglib send random 12 8 // Send 12 packets with random data of 8 bytes packet length
+    plugin mfglib send random 10000 8 // Send 10000 packets with random data of 8 bytes packet length
+
+    plugin mfglib send random 5000 125 // Send 5000 packets with random data of 125 bytes packet length
+
     <!-- plugin mfglib stop // Exit manufacturing test mode -->
     ```
 
